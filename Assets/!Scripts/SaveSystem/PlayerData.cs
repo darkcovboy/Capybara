@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Player.Skins;
 using UnityEngine;
 
 namespace SaveSystem
@@ -7,7 +9,8 @@ namespace SaveSystem
     public class PlayerData
     {
         public int Money { get; set; }
-
-        public void AddMoney(int value) => Money += value;
+        public CharacterType SelectedSkin { get; set; }
+        public List<CharacterType> UnlockedSkins { get; set; }
+        public int Capacity { get; set; }
     }
 }

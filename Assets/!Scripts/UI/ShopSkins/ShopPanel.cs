@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using SaveSystem;
 using UnityEngine;
 using Zenject;
 
@@ -14,15 +15,13 @@ namespace UI.ShopSkins
     [SerializeField] private Transform _itemsParent;
     [SerializeField] private ShopItemFactory _itemFactory;
 
-    /*
-    private PlayerSave _playerSave;
+    private SaveManager _saveManager;
 
     [Inject]
-    public void Constructor(PlayerSave playerSave)
+    public void Constructor(SaveManager saveManager)
     {
-        _playerSave = playerSave;
+        _saveManager = saveManager;
     }
-    */
 
     public void Show(IEnumerable<CharacterSkinItem> skinItems)
     {
@@ -37,9 +36,9 @@ namespace UI.ShopSkins
             skinView.Unselect();
             skinView.UnHighlight();
 
-            if(_playerSave.SaveData.UnlockedSkins.Contains(skinView.CharacterSkinItem.AnimalType))
+            if(_saveManager.PlayerData.UnlockedSkins.Contains(skinView.CharacterSkinItem.CharacterType))
             {
-                if (skinView.CharacterSkinItem.AnimalType == _playerSave.SaveData.SelectedSkin)
+                if (skinView.CharacterSkinItem.CharacterType == _saveManager.PlayerData.SelectedSkin)
                 {
                     skinView.Select();
                     skinView.Highlight();
@@ -61,7 +60,7 @@ namespace UI.ShopSkins
 
     public void OpenSkin(SkinView skinView)
     {
-        _playerSave.OpenNewSkin(skinView.CharacterSkinItem.AnimalType);
+        _saveManager.OpenNewSkin(skinView.CharacterSkinItem.CharacterType);
     }
 
     public void Select(SkinView skinView)
@@ -70,7 +69,7 @@ namespace UI.ShopSkins
             skinItem.Unselect();
 
         skinView.Select();
-        _playerSave.SelectSkin(skinView.CharacterSkinItem.AnimalType);
+        _saveManager.SelectSkin(skinView.CharacterSkinItem.CharacterType);
     }
 
     private void Sort()

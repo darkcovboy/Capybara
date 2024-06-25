@@ -1,4 +1,5 @@
 ﻿using System;
+using Player.Skins;
 using UnityEngine;
 
 namespace SaveSystem
@@ -22,6 +23,17 @@ namespace SaveSystem
         public void Save()
         {
             //Реализовать сохранения
+        }
+        public void AddMoney(int value) => PlayerData.Money += value;
+
+        public void OpenNewSkin(CharacterType characterType)
+        {
+            
+        }
+
+        public void SelectSkin(CharacterType characterType)
+        {
+            
         }
 
         private PlayerData LoadData()

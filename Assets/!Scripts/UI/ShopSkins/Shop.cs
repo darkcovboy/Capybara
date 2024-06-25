@@ -1,7 +1,10 @@
-﻿using Player.Counter;
+﻿using System.Linq;
+using Extension;
+using Player.Counter;
 using Sirenix.OdinInspector;
 using UI.Buttons;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 namespace UI.ShopSkins
@@ -12,6 +15,7 @@ namespace UI.ShopSkins
 
     [SerializeField] private BuyButton _buyButton;
     [SerializeField] private Button _selectionButton;
+    [SerializeField] private Button _buyForAdButton;
     [SerializeField] private Image _selectedText;
 
     [SerializeField] private Button _exitButton;
@@ -26,7 +30,7 @@ namespace UI.ShopSkins
 
     private void OnEnable()
     {
-        _shopPanel.Show(_contentItems.CharacterSkins.Cast<AnimalSkinItem>());
+        _shopPanel.Show(_contentItems.CharacterSkins.Cast<CharacterSkinItem>());
         _shopPanel.SkinViewClicked += OnItemViewClicked;
         _buyButton.Click += OnBuyButtonClick;
         _selectionButton.onClick.AddListener(OnSelectionButtonClick);
@@ -69,9 +73,9 @@ namespace UI.ShopSkins
 
     private void OnBuyButtonClick()
     {
-        if(_moneyCounter.IsEnough(_previousSkinView.Price))
+        if(_moneyCounter.HaveMoney(_previousSkinView.Price))
         {
-            _moneyCounter.Spend(_previousSkinView.Price);
+            _moneyCounter.TakeMoney(_previousSkinView.Price);
             _shopPanel.OpenSkin(_previousSkinView);
             SelectSkin();
             _previousSkinView.Unlock();
@@ -108,7 +112,7 @@ namespace UI.ShopSkins
         _buyButton.gameObject.Activate();
         _buyButton.UpdateText(price);
 
-        if(_moneyCounter.IsEnough(price))
+        if(_moneyCounter.HaveMoney(price))
             _buyButton.Unlock();
         else
             _buyButton.Lock();
