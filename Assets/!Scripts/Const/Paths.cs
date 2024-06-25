@@ -1,0 +1,10 @@
+﻿namespace Const
+{
+    public class Paths
+    {
+        public static readonly string CharacterDataPath = "Data/CharacterData";
+        public static readonly string EasyItemPath = "Data/Item/Easy";
+        public static readonly string MediumItemPath = "Data/Item/Medium";
+        public static readonly string HardItemPath = "Data/Item/Hard";
+    }
+}
