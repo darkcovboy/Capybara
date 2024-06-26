@@ -27,6 +27,7 @@
           <e p="Items" t="Include">
             <e p="Collector" t="Include">
               <e p="CollectorItemObserver.cs" t="Include" />
+              <e p="IItemCollected.cs" t="Include" />
               <e p="ItemCollector.cs" t="Include" />
               <e p="Numbers" t="Include">
                 <e p="NumberObject.cs" t="Include" />
@@ -38,17 +39,32 @@
             <e p="ItemData.cs" t="Include" />
           </e>
           <e p="LevelStates" t="Include">
-            <e p="FinishLevel.cs" t="Include" />
-            <e p="StartLevel.cs" t="Include" />
+            <e p="Data" t="Include">
+              <e p="LevelData.cs" t="Include" />
+            </e>
+            <e p="GameState.cs" t="Include" />
+            <e p="ILoseNotification.cs" t="Include" />
+            <e p="IWinNotification.cs" t="Include" />
+            <e p="TimerScripts" t="Include">
+              <e p="ICoroutineRunner.cs" t="Include" />
+              <e p="ITimerAdd.cs" t="Include" />
+              <e p="ITimerUpdater.cs" t="Include" />
+              <e p="Timer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Loading" t="Include">
+            <e p="LevelLoader.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Animation" t="Include">
+              <e p="CharacterAddAnimation.cs" t="Include" />
               <e p="PlayerAnimator.cs" t="Include" />
             </e>
             <e p="Character.cs" t="Include" />
             <e p="CharacterPoint.cs" t="Include" />
             <e p="CharactersGroupHolder.cs" t="Include" />
             <e p="Counter" t="Include">
+              <e p="IMoneyCounter.cs" t="Include" />
               <e p="MoneyCounter.cs" t="Include" />
             </e>
             <e p="ItemsAction" t="Include">
@@ -70,6 +86,7 @@
             </e>
             <e p="Skins" t="Include">
               <e p="CharacterType.cs" t="Include" />
+              <e p="SkinsHolder.cs" t="Include" />
               <e p="ViewModel.cs" t="Include" />
             </e>
           </e>
@@ -81,10 +98,30 @@
             <e p="SaveManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="AdPrice.cs" t="Include" />
+            <e p="Animations" t="Include">
+              <e p="ScaleLoopAnimation.cs" t="Include" />
+              <e p="ScaleUpAnimation.cs" t="Include" />
+            </e>
             <e p="Buttons" t="Include">
+              <e p="AddCharacterButton.cs" t="Include" />
+              <e p="AddTimeButton.cs" t="Include" />
+              <e p="BuyAdButton.cs" t="Include" />
               <e p="BuyButton.cs" t="Include" />
+              <e p="RewardButton.cs" t="Include" />
+            </e>
+            <e p="InfoShower" t="Include">
+              <e p="ItemCollectedShower.cs" t="Include" />
+              <e p="MoneyShower.cs" t="Include" />
+              <e p="TimerShower.cs" t="Include" />
             </e>
             <e p="Price.cs" t="Include" />
+            <e p="Screens" t="Include">
+              <e p="GameplayScreen.cs" t="Include" />
+              <e p="LeaderboardScreen.cs" t="Include" />
+              <e p="SettingsScreen.cs" t="Include" />
+              <e p="StartScreen.cs" t="Include" />
+            </e>
             <e p="ShopSkins" t="Include">
               <e p="CharacterSkinItem.cs" t="Include" />
               <e p="Shop.cs" t="Include" />

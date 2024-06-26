@@ -6,5 +6,6 @@
         public static readonly string EasyItemPath = "Data/Item/Easy";
         public static readonly string MediumItemPath = "Data/Item/Medium";
         public static readonly string HardItemPath = "Data/Item/Hard";
+        public static readonly string SkinsHolderPath = "Data/SkinsHolder";
     }
 }

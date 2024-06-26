@@ -6,6 +6,7 @@ namespace SaveSystem
 {
     public class SaveManager : MonoBehaviour
     {
+        private const string _key = "SaveKey";
         public static SaveManager Instance { get; private set; }
 
         public PlayerData PlayerData { get; private set; }
@@ -22,7 +23,9 @@ namespace SaveSystem
 
         public void Save()
         {
-            //Реализовать сохранения
+            string json = JsonUtility.ToJson(PlayerData);
+            PlayerPrefs.SetString(_key,json);
+            PlayerPrefs.Save();
         }
         public void AddMoney(int value) => PlayerData.Money += value;
 
@@ -38,8 +41,13 @@ namespace SaveSystem
 
         private PlayerData LoadData()
         {
-            //Реализовать загрузку
-            return null;
+            if (!PlayerPrefs.HasKey(_key))
+            {
+                return new PlayerData();
+            }
+
+            string json = PlayerPrefs.GetString(_key);
+            return JsonUtility.FromJson<PlayerData>(json);
         }
     }
 }

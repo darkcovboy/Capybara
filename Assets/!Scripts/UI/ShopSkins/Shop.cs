@@ -1,6 +1,8 @@
 ﻿using System.Linq;
+using DefaultNamespace;
 using Extension;
 using Player.Counter;
+using SaveSystem;
 using Sirenix.OdinInspector;
 using UI.Buttons;
 using UnityEngine;
@@ -12,10 +14,9 @@ namespace UI.ShopSkins
     public class Shop : MonoBehaviour
     {
          [SerializeField] private ShopContent _contentItems;
-
-    [SerializeField] private BuyButton _buyButton;
+         [SerializeField] private BuyButton _buyButton;
     [SerializeField] private Button _selectionButton;
-    [SerializeField] private Button _buyForAdButton;
+    [SerializeField] private BuyAdButton _buyForAdButton;
     [SerializeField] private Image _selectedText;
 
     [SerializeField] private Button _exitButton;
@@ -27,27 +28,32 @@ namespace UI.ShopSkins
     private SkinView _previousSkinView;
 
     private MoneyCounter _moneyCounter;
+    private SaveManager _saveManager;
 
     private void OnEnable()
     {
         _shopPanel.Show(_contentItems.CharacterSkins.Cast<CharacterSkinItem>());
         _shopPanel.SkinViewClicked += OnItemViewClicked;
         _buyButton.Click += OnBuyButtonClick;
+        _buyForAdButton.Click += OnAdButtonClick;
         _selectionButton.onClick.AddListener(OnSelectionButtonClick);
         _exitButton.onClick.AddListener(CloseShop);
     }
+
     private void OnDisable()
     {
         _shopPanel.SkinViewClicked -= OnItemViewClicked;
         _buyButton.Click -= OnBuyButtonClick;
+        _buyForAdButton.Click -= OnAdButtonClick;
         _selectionButton.onClick.RemoveListener(OnSelectionButtonClick);
         _exitButton.onClick.RemoveListener(CloseShop);
     }
 
     [Inject]
-    public void Constructor(MoneyCounter moneyCounter)
+    public void Constructor(MoneyCounter moneyCounter, SaveManager saveManager)
     {
         _moneyCounter = moneyCounter;
+        _saveManager = saveManager;
     }
 
     private void OnItemViewClicked(SkinView item)
@@ -67,7 +73,17 @@ namespace UI.ShopSkins
         }
         else
         {
-            ShowBuyButton(item.Price);
+            if (!_saveManager.PlayerData.AdViewsForSkins.ContainsKey(item.CharacterSkinItem.CharacterType))
+            {
+                _saveManager.PlayerData.AdViewsForSkins[item.CharacterSkinItem.CharacterType] = 0;
+            }
+
+            int adViews = _saveManager.PlayerData.AdViewsForSkins[item.CharacterSkinItem.CharacterType];
+
+            if(item.CharacterSkinItem.IsBuingForAds)
+                ShowAdButton(adViews, item.CharacterSkinItem.AmountOfAds);
+            else
+                ShowBuyButton(item.Price);
         }
     }
 
@@ -80,6 +96,24 @@ namespace UI.ShopSkins
             SelectSkin();
             _previousSkinView.Unlock();
         }
+    }
+
+    private void OnAdButtonClick()
+    {
+        void CheckAd()
+        {
+            _saveManager.PlayerData.AdViewsForSkins[_previousSkinView.CharacterSkinItem.CharacterType]++;
+
+            if (_saveManager.PlayerData.AdViewsForSkins[_previousSkinView.CharacterSkinItem.CharacterType] ==
+                _previousSkinView.CharacterSkinItem.AmountOfAds)
+            {
+                _shopPanel.OpenSkin(_previousSkinView);
+                SelectSkin();
+                _previousSkinView.Unlock();
+            }
+        }
+        
+        YandexMain.Instance.ADManager.ShowRewardedAd(CheckAd);
     }
 
     private void SelectSkin()
@@ -97,6 +131,7 @@ namespace UI.ShopSkins
     {
         _selectedText.gameObject.Activate();
         HideSelectionButton();
+        HideAdButton();
         HideBuyButton();
     }
 
@@ -105,6 +140,7 @@ namespace UI.ShopSkins
         _selectionButton.gameObject.Activate();
         HideSelectedText();
         HideBuyButton();
+        HideAdButton();
     }
 
     private void ShowBuyButton(int price)
@@ -117,12 +153,24 @@ namespace UI.ShopSkins
         else
             _buyButton.Lock();
 
+        HideAdButton();
         HideSelectedText();
         HideSelectionButton();
     }
 
-    [Button]
+    private void ShowAdButton(int current, int max)
+    {
+        _buyForAdButton.gameObject.Activate();
+        _buyForAdButton.UpdateText(current, max);
+        
+        HideBuyButton();
+        HideSelectedText();
+        HideSelectionButton();
+    }
+
     private void CloseShop() => gameObject.SetActive(false);
+
+    private void HideAdButton() => _buyForAdButton.gameObject.Deactivate();
 
     private void HideBuyButton() => _buyButton.gameObject.SetActive(false);
     private void HideSelectionButton() => _selectionButton.gameObject.SetActive(false);

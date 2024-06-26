@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447a3903298e4dd99e934bf60c326075, type: 3}
+  m_Name: Shop Content
+  m_EditorClassIdentifier: 
+  _characterSkinsItems:
+  - {fileID: 11400000, guid: 0a6592a7c2b05824eafbf39b54025ca1, type: 2}
+  - {fileID: 11400000, guid: 00274b312fc234747ae21784716075c4, type: 2}
+  - {fileID: 11400000, guid: 36fbbf8be2ae5904ba947d70aec115cd, type: 2}
+  - {fileID: 11400000, guid: 9f161ca137a9b9c46aaff2f0cdecfda7, type: 2}
+  - {fileID: 11400000, guid: e6a44545afd803b4bad32eddcefad33d, type: 2}

@@ -1,44 +1,69 @@
 ﻿using Const;
 using Items;
 using Items.Collector;
+using LevelStates.Data;
+using LevelStates.TimerScripts;
 using Player;
 using Player.Counter;
 using Player.Movement;
 using Player.PlayerStaticData;
+using SaveSystem;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
 
 namespace Installers
 {
-    public class LevelSceneInstaller : MonoInstaller
+    public class LevelSceneInstaller : MonoInstaller, ICoroutineRunner
     {
+        [Header("Configs")]
+        [SerializeField] private LevelData _levelData;
+        [Header("Prefabs")] 
+        [SerializeField] private CharactersGroupHolder _charactersGroupHolder;
+        [Header("Positions")] 
+        [SerializeField] private Transform _playerPosition;
         [Title("Dependencies")] 
         [SerializeField] private ItemCollector _itemCollector;
-        [SerializeField] private PlayerBody _playerBody;
         
         public override void InstallBindings()
         {
+            SetupSaveManager();
+            SetupTimer();
             SetupMovement();
+            SetupPlayer();
             SetupMoneyCounter();
             SetupCollector();
             SetupStaticData();
-            SetupBody();
+        }
+
+        private void SetupPlayer()
+        {
+            var player =Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_charactersGroupHolder,
+                _playerPosition.position, Quaternion.identity, null);
+
+            Container.Bind<IWatch>().To<PlayerBody>().FromInstance(player.gameObject.GetComponentInChildren<PlayerBody>())
+                .AsSingle();
+        }
+
+        private void SetupTimer()
+        {
+            Timer timer = new Timer(this, _levelData.Time);
+            Container.BindInterfacesAndSelfTo<Timer>().FromInstance(timer).AsSingle();
+        }
+
+        private void SetupSaveManager()
+        {
+            Container.Bind<SaveManager>().FromInstance(SaveManager.Instance).AsSingle();
         }
 
         private void SetupCollector()
         {
-            //Container.Bind<ItemCollector>().FromInstance(_itemCollector).AsSingle();
+            Container.BindInterfacesAndSelfTo<ItemCollector>().FromInstance(_itemCollector).AsSingle();
         }
 
         private void SetupMoneyCounter()
         {
-            Container.Bind<MoneyCounter>().AsSingle().WithArguments(10);
-        }
-
-        private void SetupBody()
-        {
-            Container.Bind<IWatch>().To<PlayerBody>().FromInstance(_playerBody).AsSingle();
+            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle().WithArguments(10);
         }
 
         private void SetupMovement()

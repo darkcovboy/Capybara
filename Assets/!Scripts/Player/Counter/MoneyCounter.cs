@@ -2,8 +2,9 @@
 
 namespace Player.Counter
 {
-    public class MoneyCounter
+    public class MoneyCounter : IMoneyCounter
     {
+        public event Action<int> OnMoneyChanged;
         public int Money { get; private set; }
 
         public int LevelCollectedMoney { get; private set; } 
@@ -31,6 +32,8 @@ namespace Player.Counter
                 LevelCollectedMoney += value;
             else
                 Money += value;
+            
+            OnMoneyChanged?.Invoke(Money);
         }
 
         public void AddByReward(int value)
@@ -39,6 +42,7 @@ namespace Player.Counter
                 throw new ArgumentException(nameof(value));
 
             Money += value;
+            OnMoneyChanged?.Invoke(Money);
         }
 
         public void TakeMoney(int value)
@@ -47,6 +51,7 @@ namespace Player.Counter
                 throw new ArgumentException(nameof(value));
 
             Money -= value;
+            OnMoneyChanged?.Invoke(Money);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Player;
 using SaveSystem;
 using UnityEngine;
 using Zenject;
@@ -16,11 +17,13 @@ namespace UI.ShopSkins
     [SerializeField] private ShopItemFactory _itemFactory;
 
     private SaveManager _saveManager;
+    private CharactersGroupHolder _player;
 
     [Inject]
-    public void Constructor(SaveManager saveManager)
+    public void Constructor(SaveManager saveManager, CharactersGroupHolder groupHolder)
     {
         _saveManager = saveManager;
+        _player = groupHolder;
     }
 
     public void Show(IEnumerable<CharacterSkinItem> skinItems)
@@ -70,6 +73,7 @@ namespace UI.ShopSkins
 
         skinView.Select();
         _saveManager.SelectSkin(skinView.CharacterSkinItem.CharacterType);
+        _player.SkinChange();
     }
 
     private void Sort()

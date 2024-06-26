@@ -12,9 +12,6 @@ namespace UI.Buttons
 
         [SerializeField] private Button _button;
         [SerializeField] private TMP_Text _text;
-        [SerializeField] private Color _lockColor;
-        [SerializeField] private Color _unlockColor;
-
         [SerializeField] private float _lockAnimationDuration = 0.4f;
         [SerializeField] private float _lockAnimationStrength = 2f;
 
@@ -27,16 +24,11 @@ namespace UI.Buttons
         public void Lock()
         {
             _isLock = true;
-            /*
-            _text.color = _lockColor;
-            _text.color.a = 255;
-            */
         }
 
         public void Unlock()
         {
             _isLock = false;
-            //_text.color = _unlockColor;
         }
 
         private void OnButtonClick()

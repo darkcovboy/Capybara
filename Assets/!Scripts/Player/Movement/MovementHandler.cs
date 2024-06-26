@@ -10,7 +10,6 @@ namespace Player.Movement
     public class MovementHandler : MonoBehaviour
     {
         [SerializeField] private CharacterController _characterController;
-        [SerializeField] private ItemHandler _itemHandler;
         [SerializeField] private PlayerAnimator _playerAnimator;
 
         private IInput _movementInput;
@@ -23,9 +22,6 @@ namespace Player.Movement
 
             if (_playerAnimator == null)
                 _playerAnimator = GetComponent<PlayerAnimator>();
-
-            if (_itemHandler == null)
-                _itemHandler = GetComponent<ItemHandler>();
         }
 
         private void Update()
@@ -38,6 +34,11 @@ namespace Player.Movement
         {
             _speed = speed;
             _movementInput = input;
+        }
+
+        public void OffMovement()
+        {
+            _characterController.enabled = false;
         }
 
         private void Move(Vector3 direction)

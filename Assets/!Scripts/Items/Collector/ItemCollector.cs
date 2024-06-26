@@ -5,9 +5,10 @@ using Zenject;
 
 namespace Items.Collector
 {
-    public class ItemCollector : MonoBehaviour
+    public class ItemCollector : MonoBehaviour, IItemCollected
     {
-        public Action<int> OnRewardCollected;
+        public event Action<int> OnRewardCollected;
+        public event Action<int, int> OnItemCollected;
 
         [Header("Prefab dependencies")]
         [SerializeField] private CollectorItemObserver _collectorItemObserver;
@@ -16,7 +17,9 @@ namespace Items.Collector
         private MoneyCounter _moneyCounter;
         private int _amountOfCollected = 0;
         private int _maxItems;
-        
+
+        public int MAXItems => _maxItems;
+
         [Inject]
         public void Constructor(MoneyCounter moneyCounter)
         {
@@ -41,6 +44,7 @@ namespace Items.Collector
             item.ConnectTo(_pointForItem, true);
 
             _amountOfCollected++;
+            OnItemCollected?.Invoke(_amountOfCollected, _maxItems);
             
             if (_amountOfCollected >= _maxItems)
             {

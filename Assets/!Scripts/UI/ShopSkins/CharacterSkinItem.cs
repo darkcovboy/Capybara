@@ -1,4 +1,5 @@
 ﻿using Player.Skins;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace UI.ShopSkins
@@ -8,7 +9,10 @@ namespace UI.ShopSkins
     {
         [Header("ShopInfo")]
         [SerializeField] private CharacterType _characterType;
-        [SerializeField, Range(0,10000)] private int _price;
+        [SerializeField] private bool _isBuingForAds = false;
+        [SerializeField] private int _price;
+        [ShowIf("_isBuingForAds")]
+        [SerializeField] private int _amountOfAds = 1;
         [SerializeField] private Sprite _image;
         [SerializeField] private ViewModel _viewModel;
 
@@ -16,5 +20,9 @@ namespace UI.ShopSkins
         public int Price => _price;
         public Sprite Image => _image;
         public ViewModel ViewModel => _viewModel;
+
+        public bool IsBuingForAds => _isBuingForAds;
+
+        public int AmountOfAds => _amountOfAds;
     }
 }
