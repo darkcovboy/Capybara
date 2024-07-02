@@ -7,7 +7,7 @@ using System.IO;
 namespace YG.Insides
 {
     [CustomEditor(typeof(InfoYG))]
-    public class InfoYGEditor : Editor
+    public class InfoYGEditor : UnityEditor.Editor
     {
         bool localization_IsActive;
         bool saves_IsActive;

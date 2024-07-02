@@ -10,15 +10,25 @@ namespace Items
     [RequireComponent(typeof(Collider))]
     public class Item : MonoBehaviour
     {
-        [Header("Move Settings")]
-        [SerializeField] private float _moveDutation = 2f;
         [SerializeField] private RewardType _rewardType;
+
         [SerializeField] private Collider _collider;
+
         [SerializeField] private Rigidbody _rigidbody;
-        
+
         private Quaternion _initialRotation;
 
+        private float _moveDutation = 6f;
+
         public ItemData ItemData { get; private set; }
+
+        private void OnValidate()
+        {
+            if (_collider == null)
+                _collider = GetComponent<Collider>();
+            if (_rigidbody == null)
+                _rigidbody = GetComponent<Rigidbody>();
+        }
 
         private void Start()
         {
@@ -80,7 +90,7 @@ namespace Items
 
             while (Vector3.Distance(transform.position, target.position) > 0.1f)
             {
-                transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * 6f);
+                transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * 15f);
                 yield return null;
             }
             

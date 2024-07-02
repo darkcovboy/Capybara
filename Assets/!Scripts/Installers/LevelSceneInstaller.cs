@@ -24,22 +24,33 @@ namespace Installers
         [SerializeField] private Transform _playerPosition;
         [Title("Dependencies")] 
         [SerializeField] private ItemCollector _itemCollector;
-        
+
         public override void InstallBindings()
         {
             SetupSaveManager();
             SetupTimer();
             SetupMovement();
-            SetupPlayer();
             SetupMoneyCounter();
             SetupCollector();
             SetupStaticData();
+            SetupPlayer();
+        }
+
+        private void SetupSaveManager()
+        {
+            Container.Bind<SaveManager>().FromInstance(SaveManager.Instance).AsSingle();
         }
 
         private void SetupPlayer()
         {
+            /*
             var player =Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_charactersGroupHolder,
                 _playerPosition.position, Quaternion.identity, null);
+                */
+            var player = Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_charactersGroupHolder, _playerPosition.position,
+                Quaternion.identity, null);
+
+            Container.Bind<CharactersGroupHolder>().FromInstance(player).AsSingle();
 
             Container.Bind<IWatch>().To<PlayerBody>().FromInstance(player.gameObject.GetComponentInChildren<PlayerBody>())
                 .AsSingle();
@@ -49,11 +60,6 @@ namespace Installers
         {
             Timer timer = new Timer(this, _levelData.Time);
             Container.BindInterfacesAndSelfTo<Timer>().FromInstance(timer).AsSingle();
-        }
-
-        private void SetupSaveManager()
-        {
-            Container.Bind<SaveManager>().FromInstance(SaveManager.Instance).AsSingle();
         }
 
         private void SetupCollector()

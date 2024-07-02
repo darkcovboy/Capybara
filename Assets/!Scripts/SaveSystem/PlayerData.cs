@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using Player.Skins;
 using UnityEngine;
 
 namespace SaveSystem
 {
     [Serializable]
+    
     public class PlayerData
     {
         public int Money { get; set; }
@@ -19,8 +21,7 @@ namespace SaveSystem
         {
             Money = 0;
             SelectedSkin = CharacterType.CapybaraDefault;
-            UnlockedSkins = new List<CharacterType>();
-            UnlockedSkins.Add(SelectedSkin);
+            UnlockedSkins = new List<CharacterType> {SelectedSkin};
             Capacity = 3;
             AdViewsForSkins = new Dictionary<CharacterType, int>();
             IsAllLevelsCompleted = false;

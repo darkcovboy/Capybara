@@ -226,6 +226,29 @@
               <e p="Polyperfect.Common.asmdef" t="Include" />
             </e>
           </e>
+          <e p="Quirky Series Vol.4 [v1.3]" t="Include">
+            <e p="_Scripts" t="Include">
+              <e p="Demo.cs" t="Include" />
+            </e>
+            <e p="_Shader" t="Include">
+              <e p="SoftSurface.shader" t="Include" />
+              <e p="ToonRamp.shader" t="Include" />
+            </e>
+            <e p="Desert Vol.2" t="Include">
+              <e p="Demo" t="Include">
+                <e p="ReadMe.txt" t="Include" />
+              </e>
+            </e>
+            <e p="River Vol.2" t="Include">
+              <e p="Demo" t="Include">
+                <e p="ReadMe.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="PlayFromInitialSceneButton.cs" t="Include" />
+          <e p="PlayFromIntitalScene.cs" t="Include" />
         </e>
         <e p="FlatKit" t="Include">
           <e p="[Render Pipeline] URP" t="Include">
@@ -1334,25 +1357,6 @@
             </e>
             <e p="Version.txt" t="Include" />
             <e p="zenject.asmdef" t="Include" />
-          </e>
-        </e>
-        <e p="Quirky Series Vol.4 [v1.3]" t="Include">
-          <e p="_Scripts" t="Include">
-            <e p="Demo.cs" t="Include" />
-          </e>
-          <e p="_Shader" t="Include">
-            <e p="SoftSurface.shader" t="Include" />
-            <e p="ToonRamp.shader" t="Include" />
-          </e>
-          <e p="Desert Vol.2" t="Include">
-            <e p="Demo" t="Include">
-              <e p="ReadMe.txt" t="Include" />
-            </e>
-          </e>
-          <e p="River Vol.2" t="Include">
-            <e p="Demo" t="Include">
-              <e p="ReadMe.txt" t="Include" />
-            </e>
           </e>
         </e>
         <e p="Resources" t="Include">

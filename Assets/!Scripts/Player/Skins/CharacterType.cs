@@ -1,11 +1,14 @@
-﻿namespace Player.Skins
+﻿using System;
+
+namespace Player.Skins
 {
+    [Serializable]
     public enum CharacterType
     {
-        CapybaraDefault,
-        Capybara1,
-        Capybara2,
-        Capybara3,
-        Capybara4
+        CapybaraDefault = 0,
+        Capybara1 = 1,
+        Capybara2 = 2,
+        Capybara3 = 3,
+        Capybara4 = 4
     }
 }

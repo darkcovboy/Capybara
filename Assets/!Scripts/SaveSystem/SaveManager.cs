@@ -1,4 +1,6 @@
 ﻿using System;
+using Newtonsoft.Json;
+using Player;
 using Player.Skins;
 using UnityEngine;
 
@@ -19,6 +21,8 @@ namespace SaveSystem
             DontDestroyOnLoad(this);
 
             PlayerData = LoadData();
+            
+            Debug.Log(PlayerData.Capacity);
         }
 
         public void Save()
@@ -41,13 +45,12 @@ namespace SaveSystem
 
         private PlayerData LoadData()
         {
-            if (!PlayerPrefs.HasKey(_key))
-            {
-                return new PlayerData();
-            }
-
             string json = PlayerPrefs.GetString(_key);
-            return JsonUtility.FromJson<PlayerData>(json);
+            
+            if(String.IsNullOrEmpty(json))
+                return new PlayerData();
+            
+            return JsonConvert.DeserializeObject<PlayerData>(json);
         }
     }
 }

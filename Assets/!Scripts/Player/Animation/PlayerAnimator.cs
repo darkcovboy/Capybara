@@ -10,6 +10,8 @@ namespace Player.Animation
         
         private readonly int _moveSpeed = Animator.StringToHash("Speed");
         private readonly int _haveItem = Animator.StringToHash("HaveItem");
+        private readonly int _victory = Animator.StringToHash("Victory");
+        private readonly int _death = Animator.StringToHash("Death");
 
         private void OnValidate()
         {
@@ -24,17 +26,17 @@ namespace Player.Animation
         
         public void SetItem(bool haveItem)
         {
-            //_animator.SetBool(_haveItem, haveItem);
+            _animator.SetBool(_haveItem, haveItem);
         }
 
         public void PlayVictory()
         {
-            
+            _animator.SetTrigger(_victory);
         }
 
         public void PlayDeath()
         {
-            
+            _animator.SetTrigger(_death);
         }
     }
 }

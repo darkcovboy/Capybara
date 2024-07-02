@@ -29,7 +29,6 @@ namespace UI.InfoShower
         private void UpdateText(int current, int max)
         {
             _text.text = $"{current}";
-            // ReSharper disable once PossibleLossOfFraction
             _image.fillAmount = current/max;
         }
     }

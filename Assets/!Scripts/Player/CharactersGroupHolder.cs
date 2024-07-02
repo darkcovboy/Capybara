@@ -70,7 +70,8 @@ namespace Player
 
         private Character GetCurrentSkinPrefab()
         {
-            CharacterType type = _saveManager.PlayerData.SelectedSkin;
+            Debug.Log(SaveManager.Instance.PlayerData.Capacity);
+            CharacterType type = SaveManager.Instance.PlayerData.SelectedSkin;
             Character prefab = _skinsHolder.CharactersContainer.FirstOrDefault(x => x.CharacterType == type)?.Prefab;
             return prefab;
         }

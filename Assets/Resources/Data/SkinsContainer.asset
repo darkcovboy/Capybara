@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _charactersContainer:
   - CharacterType: 0
-    Prefab: {fileID: 7922579985918499266, guid: c2f24047342e93943adfdc7e4e4e6970, type: 3}
+    Prefab: {fileID: 3078000908670150128, guid: 3ed9d48fc728714489a36df6f17d6d9c, type: 3}

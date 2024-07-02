@@ -10,7 +10,7 @@ using TMPro;
 namespace YG.Insides
 {
     [CustomEditor(typeof(LanguageYG))]
-    public class LanguageYGEditor : Editor
+    public class LanguageYGEditor : UnityEditor.Editor
     {
         LanguageYG scr;
 
