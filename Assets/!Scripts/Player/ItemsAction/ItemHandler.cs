@@ -7,6 +7,8 @@ namespace Player.ItemsAction
 {
     public class ItemHandler : MonoBehaviour
     {
+        public event Action<RewardType?> OnItemCollected; 
+        
         [Header("Dependency")]
         [SerializeField] private PlayerAnimator _animator;
         [SerializeField] private PlayerItemObserver playerItem;
@@ -37,6 +39,7 @@ namespace Player.ItemsAction
             CurrentItem.Disconnect();
             CurrentItem = null;
             _animator.SetItem(HaveItem);
+            OnItemCollected?.Invoke(null);
         }
 
         private void CheckAndPickItem(Item item)
@@ -45,6 +48,7 @@ namespace Player.ItemsAction
                 return;
 
             CurrentItem = item;
+            OnItemCollected?.Invoke(CurrentItem.RewardType);
             
             _animator.SetItem(HaveItem);
             CurrentItem.ConnectTo(_itemPointHandler);

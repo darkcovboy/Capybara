@@ -15,11 +15,6 @@ namespace UI
             _text.text = $"{current}/{max}";
         }
 
-        public void Show(string max)
-        {
-            _text.text = max;
-        }
-
         public void Hide() => gameObject.Deactivate();
     }
 }

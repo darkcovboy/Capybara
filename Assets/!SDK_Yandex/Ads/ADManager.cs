@@ -20,6 +20,7 @@ namespace Ads
         {
             VideoAd.Show(PauseGameplay, onReward, ResumeGameplay);
         }
+        
 
         private void PauseGameplay()
         {

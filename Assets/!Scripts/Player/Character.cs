@@ -27,6 +27,10 @@ namespace Player
             Setup();
         }
 
+        public void BlockMovement() => _movementHandler.OffMovement();
+
+        public void UnblockMovement() => _movementHandler.OnMovement();
+
         public void Win()
         {
             _movementHandler.OffMovement();

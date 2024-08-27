@@ -5,13 +5,15 @@ using Player.Counter;
 using SaveSystem;
 using Sirenix.OdinInspector;
 using UI.Buttons;
+using UI.Screens;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
+using Screen = UI.Screens.Screen;
 
 namespace UI.ShopSkins
 {
-    public class Shop : MonoBehaviour
+    public class Shop : Screen
     {
          [SerializeField] private ShopContent _contentItems;
          [SerializeField] private BuyButton _buyButton;

@@ -13,7 +13,6 @@ namespace UI.Animations
         [SerializeField] [Min(0f)] private float _duration= 0.5f;
         [SerializeField] private Ease _ease= Ease.OutBack;
         [SerializeField] [Min(0f)] private float _overshoot= 1.7f;
-
         private void Start()
         {
             if (_mode != Mode.Start)
@@ -27,6 +26,7 @@ namespace UI.Animations
             if (_mode != Mode.OnEnable)
                 return;
 
+            
             Scale(Vector3.one);
         }
 

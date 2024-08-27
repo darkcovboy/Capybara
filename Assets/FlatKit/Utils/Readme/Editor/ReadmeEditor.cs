@@ -10,14 +10,11 @@ namespace FlatKit {
 public class ReadmeEditor : UnityEditor.Editor {
     private static readonly string AssetName = "Flat Kit";
 
-    private static readonly GUID UnityPackageUrpGuid =
-        new GUID("41e59f562b69648719f2424c438758f3");
+    private static readonly GUID UnityPackageUrpGuid = new GUID("41e59f562b69648719f2424c438758f3");
 
-    private static readonly GUID UnityPackageBuiltInGuid =
-        new GUID("f4227764308e84f89a765fbf315e2945");
+    private static readonly GUID UnityPackageBuiltInGuid = new GUID("f4227764308e84f89a765fbf315e2945");
 
-    private static readonly GUID
-        UrpPipelineAssetGuid = new GUID("ecbd363870e07455ea237f5753668d30");
+    private static readonly GUID UrpPipelineAssetGuid = new GUID("ecbd363870e07455ea237f5753668d30");
 
     private FlatKitReadme _readme;
     private bool _showingVersionMessage;
@@ -37,6 +34,18 @@ public class ReadmeEditor : UnityEditor.Editor {
         _showingVersionMessage = false;
         _showingClearCacheMessage = false;
         _versionLatest = null;
+
+        AssetDatabase.importPackageStarted += OnImportPackageStarted;
+        AssetDatabase.importPackageCompleted += OnImportPackageCompleted;
+        AssetDatabase.importPackageFailed += OnImportPackageFailed;
+        AssetDatabase.importPackageCancelled += OnImportPackageCancelled;
+    }
+
+    private void OnDisable() {
+        AssetDatabase.importPackageStarted -= OnImportPackageStarted;
+        AssetDatabase.importPackageCompleted -= OnImportPackageCompleted;
+        AssetDatabase.importPackageFailed -= OnImportPackageFailed;
+        AssetDatabase.importPackageCancelled -= OnImportPackageCancelled;
     }
 
     public override void OnInspectorGUI() {
@@ -110,8 +119,7 @@ public class ReadmeEditor : UnityEditor.Editor {
                 DrawUILine(Color.yellow, 1, 0);
 
                 EditorGUILayout.HelpBox(
-                    $"Before using {AssetName} you need to unpack it depending on your " +
-                    "project's Render Pipeline.",
+                    $"Before using {AssetName} you need to unpack it depending on your " + "project's Render Pipeline.",
                     MessageType.Warning);
 
                 GUILayout.BeginHorizontal();
@@ -136,9 +144,7 @@ public class ReadmeEditor : UnityEditor.Editor {
             if (!string.IsNullOrEmpty(_readme.PackageManagerError)) {
                 EditorGUILayout.Separator();
                 DrawUILine(Color.yellow, 1, 0);
-                EditorGUILayout.HelpBox(
-                    $"Package Manager error: {_readme.PackageManagerError}",
-                    MessageType.Warning);
+                EditorGUILayout.HelpBox($"Package Manager error: {_readme.PackageManagerError}", MessageType.Warning);
                 DrawUILine(Color.yellow, 1, 0);
             }
         }
@@ -177,9 +183,9 @@ public class ReadmeEditor : UnityEditor.Editor {
 
             if (_showingClearCacheMessage) {
                 if (_cacheClearedSuccessfully) {
-                    EditorGUILayout.HelpBox($"Successfully removed cached packages. \n" +
-                                            $"Please re-download {AssetName} in the Package Manager.",
-                        MessageType.Info);
+                    EditorGUILayout.HelpBox(
+                        $"Successfully removed cached packages. \n" +
+                        $"Please re-download {AssetName} in the Package Manager.", MessageType.Info);
                 } else {
                     EditorGUILayout.HelpBox($"Could not find or clear package cache.", MessageType.Warning);
                 }
@@ -188,20 +194,28 @@ public class ReadmeEditor : UnityEditor.Editor {
             EditorGUILayout.Separator();
         }
 
+        DrawColorSpaceCheck();
+
         {
             DrawUILine(Color.gray, 1, 20);
             GUILayout.BeginHorizontal();
 
             EditorGUILayout.LabelField("Debug info", EditorStyles.miniBoldLabel);
 
+            GUILayout.BeginVertical();
             if (GUILayout.Button("Copy", EditorStyles.miniButtonLeft)) {
                 CopyDebugInfoToClipboard();
-                EditorUtility.DisplayDialog(AssetName,
-                    "Debug info copied to clipboard, please paste it in the support ticket.",
-                    "OK");
+                // EditorUtility.DisplayDialog(AssetName, "Debug info copied to the clipboard.", "OK");
             }
 
+            if (EditorGUIUtility.systemCopyBuffer == GetDebugInfoString()) {
+                EditorGUILayout.LabelField("Copied!", EditorStyles.miniLabel);
+            }
+
+            GUILayout.EndVertical();
+
             GUILayout.EndHorizontal();
+
             var debugInfo = GetDebugInfo();
             foreach (var s in debugInfo) {
                 EditorGUILayout.LabelField($"    " + s, EditorStyles.miniLabel);
@@ -218,7 +232,8 @@ public class ReadmeEditor : UnityEditor.Editor {
             $"Dev platform: {Application.platform}",
             $"Target platform: {EditorUserBuildSettings.activeBuildTarget}",
             $"URP installed: {_readme.UrpInstalled}, version {_readme.UrpVersionInstalled}",
-            $"Render pipeline: {Shader.globalRenderPipeline}"
+            $"Render pipeline: {Shader.globalRenderPipeline}",
+            $"Color space: {PlayerSettings.colorSpace}"
         };
 
         var qualityConfig = QualitySettings.renderPipeline == null ? "N/A" : QualitySettings.renderPipeline.name;
@@ -232,15 +247,27 @@ public class ReadmeEditor : UnityEditor.Editor {
         return info.ToArray();
     }
 
+    private string GetDebugInfoString() {
+        string[] info = GetDebugInfo();
+        return String.Join("\n", info);
+    }
+
+    private void CopyDebugInfoToClipboard() {
+        EditorGUIUtility.systemCopyBuffer = GetDebugInfoString();
+    }
+
     private void OpenPackageManager() {
+#if UNITY_2020_1_OR_NEWER
         Client.Resolve();
+#endif
+
         const string packageName = "Flat Kit: Toon Shading and Water";
         UnityEditor.PackageManager.UI.Window.Open(packageName);
 
         /*
         var request = Client.Add(packageName);
         while (!request.IsCompleted) System.Threading.Tasks.Task.Delay(100);
-        if (request.Status != StatusCode.Success) Debug.LogError("Cannot import Quibli: " + request.Error.message);
+        if (request.Status != StatusCode.Success) Debug.LogError("Cannot import asset: " + request.Error.message);
         */
     }
 
@@ -256,10 +283,9 @@ public class ReadmeEditor : UnityEditor.Editor {
 
         if (Application.platform == RuntimePlatform.WindowsEditor) {
             // This wouldn't understand %APPDATA%.
-            path =
-                Application.persistentDataPath
-                    .Substring(0, Application.persistentDataPath.IndexOf("AppData", StringComparison.Ordinal)) +
-                "/AppData/Roaming/Unity/Asset Store-5.x/Dustyroom";
+            path = Application.persistentDataPath.Substring(0,
+                       Application.persistentDataPath.IndexOf("AppData", StringComparison.Ordinal)) +
+                   "/AppData/Roaming/Unity/Asset Store-5.x/Dustyroom";
         }
 
         if (path == string.Empty) return;
@@ -271,7 +297,7 @@ public class ReadmeEditor : UnityEditor.Editor {
     private void UnpackFlatKitUrp() {
         string path = AssetDatabase.GUIDToAssetPath(UnityPackageUrpGuid.ToString());
         if (path == null) {
-            Debug.LogError("[Flat Kit] Could not find the URP package.");
+            Debug.LogError($"<b>[{AssetName}]</b> Could not find the URP package.");
         } else {
             AssetDatabase.ImportPackage(path, false);
         }
@@ -280,28 +306,44 @@ public class ReadmeEditor : UnityEditor.Editor {
     private void UnpackFlatKitBuiltInRP() {
         string path = AssetDatabase.GUIDToAssetPath(UnityPackageBuiltInGuid.ToString());
         if (path == null) {
-            Debug.LogError("[Flat Kit] Could not find the Built-in RP package.");
+            Debug.LogError($"<b>[{AssetName}]</b> Could not find the Built-in RP package.");
         } else {
             AssetDatabase.ImportPackage(path, false);
         }
     }
 
+    private void OnImportPackageStarted(string packageName) { }
+
+    private void OnImportPackageCompleted(string packageName) {
+        _readme.Refresh();
+        Repaint();
+        EditorUtility.SetDirty(this);
+    }
+
+    private void OnImportPackageFailed(string packageName, string errorMessage) {
+        Debug.LogError($"<b>[{AssetName}]</b> Failed to unpack {packageName}: {errorMessage}.");
+    }
+
+    private void OnImportPackageCancelled(string packageName) {
+        Debug.LogError($"<b>[{AssetName}]</b> Cancelled unpacking {packageName}.");
+    }
+
     private void ConfigureUrp() {
         string path = AssetDatabase.GUIDToAssetPath(UrpPipelineAssetGuid.ToString());
         if (path == null) {
-            Debug.LogError("[Flat Kit] Couldn't find the URP pipeline asset. " +
+            Debug.LogError($"[{AssetName}] Couldn't find the URP pipeline asset. " +
                            "Have you unpacked the URP package?");
             return;
         }
 
         var pipelineAsset = AssetDatabase.LoadAssetAtPath<RenderPipelineAsset>(path);
         if (pipelineAsset == null) {
-            Debug.LogError("[Flat Kit] Couldn't load the URP pipeline asset.");
+            Debug.LogError($"[{AssetName}] Couldn't load the URP pipeline asset.");
             return;
         }
 
-        Debug.Log("<b>[Flat Kit]</b> Set the render pipeline asset in the Graphics settings " +
-                  "to the Flat Kit example.");
+        Debug.Log(
+            $"<b>[{AssetName}]</b> Set the render pipeline asset in the Graphics settings to the {AssetName} example.");
         GraphicsSettings.renderPipelineAsset = pipelineAsset;
         GraphicsSettings.defaultRenderPipeline = pipelineAsset;
 
@@ -310,8 +352,7 @@ public class ReadmeEditor : UnityEditor.Editor {
 
     private void ConfigureBuiltIn() {
         GraphicsSettings.renderPipelineAsset = null;
-        Debug.Log("<b>[Flat Kit]</b> Cleared the render pipeline asset in the " +
-                  "Graphics settings.");
+        Debug.Log($"<b>[{AssetName}]</b> Cleared the render pipeline asset in the Graphics settings.");
 
         ChangePipelineAssetAllQualityLevels(null);
     }
@@ -319,7 +360,7 @@ public class ReadmeEditor : UnityEditor.Editor {
     private void ChangePipelineAssetAllQualityLevels(RenderPipelineAsset pipelineAsset) {
         var originalQualityLevel = QualitySettings.GetQualityLevel();
 
-        var logString = "<b>[Flat Kit]</b> Set the render pipeline asset for the quality levels:";
+        var logString = $"<b>[{AssetName}]</b> Set the render pipeline asset for the quality levels:";
 
         for (int i = 0; i < QualitySettings.names.Length; i++) {
             logString += $"\n\t{QualitySettings.names[i]}";
@@ -332,16 +373,24 @@ public class ReadmeEditor : UnityEditor.Editor {
         QualitySettings.SetQualityLevel(originalQualityLevel, false);
     }
 
-    private void CheckVersion() {
-        NetworkManager.GetVersion(version => { _versionLatest = version; });
+    private void DrawColorSpaceCheck() {
+        if (PlayerSettings.colorSpace != ColorSpace.Linear) {
+            DrawUILine(Color.gray, 1, 20);
+            EditorGUILayout.HelpBox(
+                $"{AssetName} demo scenes were created for the Linear color space, but your project is " +
+                $"using {PlayerSettings.colorSpace}.\nThis may result in the demo scenes appearing slightly " +
+                $"different compared to the Asset Store screenshots.\nOptionally, you may switch the color space " +
+                $"using the button below.",
+                MessageType.Warning);
+
+            if (GUILayout.Button("Switch player settings to Linear color space")) {
+                PlayerSettings.colorSpace = ColorSpace.Linear;
+            }
+        }
     }
 
-    private void CopyDebugInfoToClipboard() {
-        EditorGUIUtility.systemCopyBuffer =
-            $"Flat Kit: {_readme.FlatKitVersion}, " +
-            $"URP: {_readme.UrpVersionInstalled}, " +
-            $"Unity: {_readme.UnityVersion}";
-        Debug.Log("<b>Flat Kit</b> info copied to clipboard.");
+    private void CheckVersion() {
+        NetworkManager.GetVersion(version => { _versionLatest = version; });
     }
 
     private void OpenSupportTicket() {

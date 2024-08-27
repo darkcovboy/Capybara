@@ -2,7 +2,7 @@
 
 namespace UI.Screens
 {
-    public class GameplayScreen : MonoBehaviour
+    public class GameplayScreen : Screen
     {
         
     }

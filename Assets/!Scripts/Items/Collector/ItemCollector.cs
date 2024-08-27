@@ -1,17 +1,21 @@
 ﻿using System;
+using LevelStates;
 using Player.Counter;
 using UnityEngine;
 using Zenject;
 
 namespace Items.Collector
 {
-    public class ItemCollector : MonoBehaviour, IItemCollected
+    public class ItemCollector : MonoBehaviour, IItemCollected, IWinNotification
     {
         public event Action<int> OnRewardCollected;
         public event Action<int, int> OnItemCollected;
 
+        public event Action OnGameWin;
+
         [Header("Prefab dependencies")]
         [SerializeField] private CollectorItemObserver _collectorItemObserver;
+
         [SerializeField] private Transform _pointForItem;
 
         private MoneyCounter _moneyCounter;
@@ -19,6 +23,7 @@ namespace Items.Collector
         private int _maxItems;
 
         public int MAXItems => _maxItems;
+
 
         [Inject]
         public void Constructor(MoneyCounter moneyCounter)
@@ -48,7 +53,7 @@ namespace Items.Collector
             
             if (_amountOfCollected >= _maxItems)
             {
-                //Мы победили
+                OnGameWin?.Invoke();
             }
         }
 

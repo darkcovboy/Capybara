@@ -2,7 +2,7 @@
 
 namespace UI.Screens
 {
-    public class LeaderboardScreen : MonoBehaviour
+    public class LeaderboardScreen : Screen
     {
         
     }

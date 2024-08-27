@@ -12,14 +12,17 @@ namespace Items
     {
         [SerializeField] private RewardType _rewardType;
 
+
         [SerializeField] private Collider _collider;
 
         [SerializeField] private Rigidbody _rigidbody;
 
         private Quaternion _initialRotation;
 
-        private float _moveDutation = 6f;
+        private float _moveDuration = 6f;
+        private float _moveCollectorDuration = 1f;
 
+        public RewardType RewardType => _rewardType;
         public ItemData ItemData { get; private set; }
 
         private void OnValidate()
@@ -81,7 +84,7 @@ namespace Items
         private void MoveToCollector(Transform target)
         {
             transform.SetParent(null);
-            transform.DOMove(target.position, _moveDutation).SetEase(Ease.InOutSine).OnComplete(DestroySelf);
+            transform.DOMove(target.position, _moveCollectorDuration).SetEase(Ease.InOutSine).OnComplete(DestroySelf);
         }
 
         private IEnumerator MoveToTarget(Transform target)

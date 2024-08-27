@@ -1,6 +1,7 @@
 ﻿using Const;
 using Items;
 using Items.Collector;
+using LevelStates;
 using LevelStates.Data;
 using LevelStates.TimerScripts;
 using Player;
@@ -9,6 +10,7 @@ using Player.Movement;
 using Player.PlayerStaticData;
 using SaveSystem;
 using Sirenix.OdinInspector;
+using UI.Screens;
 using UnityEngine;
 using Zenject;
 
@@ -22,31 +24,37 @@ namespace Installers
         [SerializeField] private CharactersGroupHolder _charactersGroupHolder;
         [Header("Positions")] 
         [SerializeField] private Transform _playerPosition;
+
         [Title("Dependencies")] 
+        [SerializeField] private ScreensHolder _screensHolder;
         [SerializeField] private ItemCollector _itemCollector;
+        [SerializeField] private GameState _game;
 
         public override void InstallBindings()
         {
-            SetupSaveManager();
             SetupTimer();
             SetupMovement();
             SetupMoneyCounter();
             SetupCollector();
             SetupStaticData();
             SetupPlayer();
+            SetupGame();
+            SetupUI();
         }
 
-        private void SetupSaveManager()
+        private void SetupUI()
         {
-            Container.Bind<SaveManager>().FromInstance(SaveManager.Instance).AsSingle();
+            Container.Bind<VictoryScreen>().FromInstance(_screensHolder.VictoryScreen).AsSingle();
+            Container.Bind<LoseScreen>().FromInstance(_screensHolder.LoseScreen).AsSingle();
         }
 
+        private void SetupGame()
+        {
+            Container.Bind<GameState>().FromInstance(_game).AsSingle();
+        }
+        
         private void SetupPlayer()
         {
-            /*
-            var player =Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_charactersGroupHolder,
-                _playerPosition.position, Quaternion.identity, null);
-                */
             var player = Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_charactersGroupHolder, _playerPosition.position,
                 Quaternion.identity, null);
 

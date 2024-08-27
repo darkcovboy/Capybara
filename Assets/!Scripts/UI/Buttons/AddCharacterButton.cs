@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using Const;
 using DG.Tweening;
 using Player;
 using SaveSystem;
+using StaticData;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,24 +14,26 @@ namespace UI.Buttons
 {
     public class AddCharacterButton : MonoBehaviour
     {
-        [SerializeField] private TMP_Text _text;
+        [SerializeField] private Price _price;
         [SerializeField] private Button _button;
         [SerializeField] private float _lockAnimationDuration = 0.4f;
         [SerializeField] private float _lockAnimationStrength = 2f;
         
         private CharactersGroupHolder _player;
         private SaveManager _saveManager;
+        private List<int> _prices;
 
         [Inject]
         public void Constructor(CharactersGroupHolder player, SaveManager saveManager)
         {
             _player = player;
             _saveManager = saveManager;
+            _prices = Resources.Load<UpgradeCharacterPrices>(Paths.PricesHolderPath).Prices;
         }
 
         private void OnEnable()
         {
-            CheckInteractable();
+            UpdatePriceInfo();
             _button.onClick.AddListener(AddCharacter);
         }
 
@@ -37,11 +42,15 @@ namespace UI.Buttons
             _button.onClick.RemoveListener(AddCharacter);
         }
 
-        private void CheckInteractable()
+        private void UpdatePriceInfo()
         {
             if (_player.IsMaxCapacity())
             {
-                _text.text = "Max";
+                _price.Show("Max");
+            }
+            else
+            {
+                _price.Show(_prices[_saveManager.PlayerData.Capacity]);
             }
         }
 
@@ -51,6 +60,7 @@ namespace UI.Buttons
             {
                 _saveManager.PlayerData.Capacity++;
                 _player.AddCharacter();
+                UpdatePriceInfo();
             }
             else
             {

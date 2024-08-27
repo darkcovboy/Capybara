@@ -22,7 +22,9 @@
             <e p="GameObjectExtension.cs" t="Include" />
           </e>
           <e p="Installers" t="Include">
+            <e p="InitSceneStarter.cs" t="Include" />
             <e p="LevelSceneInstaller.cs" t="Include" />
+            <e p="ProjectInstaller.cs" t="Include" />
           </e>
           <e p="Items" t="Include">
             <e p="Collector" t="Include">
@@ -54,10 +56,12 @@
           </e>
           <e p="Loading" t="Include">
             <e p="LevelLoader.cs" t="Include" />
+            <e p="LoadingCurtain.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Animation" t="Include">
               <e p="CharacterAddAnimation.cs" t="Include" />
+              <e p="HardItemAnimation.cs" t="Include" />
               <e p="PlayerAnimator.cs" t="Include" />
             </e>
             <e p="Character.cs" t="Include" />
@@ -97,9 +101,14 @@
             <e p="PlayerData.cs" t="Include" />
             <e p="SaveManager.cs" t="Include" />
           </e>
+          <e p="StaticData" t="Include">
+            <e p="UpgradeCharacterPrices.cs" t="Include" />
+          </e>
+          <e p="TestMovement.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AdPrice.cs" t="Include" />
             <e p="Animations" t="Include">
+              <e p="ScaleDownAnimation.cs" t="Include" />
               <e p="ScaleLoopAnimation.cs" t="Include" />
               <e p="ScaleUpAnimation.cs" t="Include" />
             </e>
@@ -118,9 +127,15 @@
             <e p="Price.cs" t="Include" />
             <e p="Screens" t="Include">
               <e p="GameplayScreen.cs" t="Include" />
+              <e p="IScreen.cs" t="Include" />
               <e p="LeaderboardScreen.cs" t="Include" />
+              <e p="LoseScreen.cs" t="Include" />
+              <e p="RewardArrowMovement.cs" t="Include" />
+              <e p="Screen.cs" t="Include" />
+              <e p="ScreensHolder.cs" t="Include" />
               <e p="SettingsScreen.cs" t="Include" />
               <e p="StartScreen.cs" t="Include" />
+              <e p="VictoryScreen.cs" t="Include" />
             </e>
             <e p="ShopSkins" t="Include">
               <e p="CharacterSkinItem.cs" t="Include" />
@@ -155,6 +170,16 @@
           </e>
         </e>
         <e p="AddedAssets" t="Include">
+          <e p="Anime Particles" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="CreateFireballs.cs" t="Include" />
+                <e p="Demo.cs" t="Include" />
+                <e p="Fireballs.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ReadMe.txt" t="Include" />
+          </e>
           <e p="CuteKawaiiGUIPack" t="Include">
             <e p="Demo" t="Include">
               <e p="Fonts" t="Include">
@@ -170,8 +195,48 @@
               </e>
             </e>
           </e>
+          <e p="Epic Toon FX" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ETFXButtonScript.cs" t="Include" />
+                <e p="ETFXFireProjectile.cs" t="Include" />
+                <e p="ETFXLoopScript.cs" t="Include" />
+                <e p="ETFXMouseOrbit.cs" t="Include" />
+                <e p="ETFXProjectileScript.cs" t="Include" />
+                <e p="ETFXSceneManager.cs" t="Include" />
+                <e p="ETFXTarget.cs" t="Include" />
+                <e p="VFX Library" t="Include">
+                  <e p="ParticleEffectsLibrary.cs" t="Include" />
+                  <e p="PEButtonScript.cs" t="Include" />
+                  <e p="UICanvasManager.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Prefabs" t="Include">
+              <e p="Combat" t="Include">
+                <e p="Combat FX.txt" t="Include" />
+              </e>
+              <e p="Environment" t="Include">
+                <e p="Environment FX.txt" t="Include" />
+              </e>
+              <e p="Interactive" t="Include">
+                <e p="Interactive FX.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="ETFXLightFade.cs" t="Include" />
+              <e p="ETFXPitchRandomizer.cs" t="Include" />
+              <e p="ETFXRotation.cs" t="Include" />
+            </e>
+          </e>
           <e p="Free Stylized Skybox" t="Include">
             <e p="ReadMe.txt" t="Include" />
+          </e>
+          <e p="GUI Kit Casual Game" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Panel.cs" t="Include" />
+              <e p="PanelControl.cs" t="Include" />
+            </e>
           </e>
           <e p="GUI Mobile Hyper-Casual" t="Include">
             <e p="TextMesh Pro" t="Include">
@@ -212,6 +277,101 @@
               <e p="EpiShowcase.cs" t="Include" />
             </e>
           </e>
+          <e p="Mini Games" t="Include">
+            <e p="MiniGames" t="Include">
+              <e p="Coin Drop" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CoinDrop.cs" t="Include" />
+                  <e p="CoinObject.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="CoinDropEditor.cs" t="Include" />
+                  </e>
+                  <e p="GameController.cs" t="Include" />
+                  <e p="RewardElement.cs" t="Include" />
+                  <e p="Slot.cs" t="Include" />
+                  <e p="TouchAudio.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Hit Reward" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="HitRewardEditor.cs" t="Include" />
+                  </e>
+                  <e p="GameController.cs" t="Include" />
+                  <e p="HitReward.cs" t="Include" />
+                  <e p="Knife.cs" t="Include" />
+                  <e p="PieceFeatures.cs" t="Include" />
+                  <e p="PieceObject.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Lucky Wheel" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="LuckyWheelEditor.cs" t="Include" />
+                  </e>
+                  <e p="GameController.cs" t="Include" />
+                  <e p="LuckyWheel.cs" t="Include" />
+                  <e p="PieceFeatures.cs" t="Include" />
+                  <e p="PieceObject.cs" t="Include" />
+                  <e p="Stopper.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Slot Machine" t="Include">
+                <e p="BeardyGridLayoutGroup" t="Include">
+                  <e p="package.json" t="Include" />
+                  <e p="src" t="Include">
+                    <e p="Runtime" t="Include">
+                      <e p="Beardy.BeardsGridLayoutGroup.Runtime.asmdef" t="Include" />
+                      <e p="GridLayoutGroup.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="Column.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="SlotMachineEditor.cs" t="Include" />
+                  </e>
+                  <e p="GameController.cs" t="Include" />
+                  <e p="RewardElement.cs" t="Include" />
+                  <e p="SlotMachine.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CategoryIcon.cs" t="Include" />
+              <e p="CustomButton.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="MiniGameEditor.cs" t="Include" />
+              </e>
+              <e p="Gateway.cs" t="Include" />
+              <e p="Language.cs" t="Include" />
+              <e p="LocalisationData.cs" t="Include" />
+              <e p="LocalisationManager.cs" t="Include" />
+              <e p="LocalisationText.cs" t="Include" />
+              <e p="MiniGame.cs" t="Include" />
+              <e p="PaidStartElement.cs" t="Include" />
+              <e p="PanelLaunchFromAd.cs" t="Include" />
+              <e p="PopupPanel.cs" t="Include" />
+              <e p="Reward.cs" t="Include" />
+              <e p="RewardEnum.cs" t="Include" />
+              <e p="RewardSet.cs" t="Include" />
+              <e p="Rotate.cs" t="Include" />
+            </e>
+            <e p="uiextensions" t="Include">
+              <e p="Runtime" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="Shaders" t="Include">
+                    <e p="UISoftAdditive.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="Effects" t="Include">
+                    <e p="UIParticleSystem.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
           <e p="Mnostva_Art" t="Include">
             <e p="Documentation.txt" t="Include" />
           </e>
@@ -227,9 +387,6 @@
             </e>
           </e>
           <e p="Quirky Series Vol.4 [v1.3]" t="Include">
-            <e p="_Scripts" t="Include">
-              <e p="Demo.cs" t="Include" />
-            </e>
             <e p="_Shader" t="Include">
               <e p="SoftSurface.shader" t="Include" />
               <e p="ToonRamp.shader" t="Include" />
@@ -251,6 +408,14 @@
           <e p="PlayFromIntitalScene.cs" t="Include" />
         </e>
         <e p="FlatKit" t="Include">
+          <e p="[Render Pipeline] Built-in" t="Include">
+            <e p="ImageEffects" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="FogImageEffect.cs" t="Include" />
+                <e p="OutlineImageEffect.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="[Render Pipeline] URP" t="Include">
             <e p="RenderFeatures" t="Include">
               <e p="Common" t="Include">
@@ -289,6 +454,7 @@
             <e p="Common" t="Include">
               <e p="Scripts" t="Include">
                 <e p="Motion" t="Include">
+                  <e p="CameraMouseOrbit.cs" t="Include" />
                   <e p="Editor" t="Include">
                     <e p="LinearMotionEditor.cs" t="Include" />
                   </e>
@@ -1524,6 +1690,7 @@
           </e>
         </e>
       </e>
+      <e p="Beardy.BeardsGridLayoutGroup.Runtime.csproj" t="IncludeRecursive" />
       <e p="Capybara.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

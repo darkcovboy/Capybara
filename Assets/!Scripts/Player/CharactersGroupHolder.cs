@@ -19,8 +19,6 @@ namespace Player
 
         [Header("Character Settings")]
         [SerializeField] private CharacterPoint[] _positions;
-        [SerializeField] private int _count;
-
         private List<Character> _charactersList = new List<Character>();
         private CharacterData _characterData;
         private IInput _input;
@@ -43,6 +41,14 @@ namespace Player
             CreateCharacters();
         }
 
+        public void UnblockMovement()
+        {
+            foreach (var character in _charactersList)
+            {
+                character.UnblockMovement();
+            }
+        }
+
         public void Win()
         {
             foreach (var character in _charactersList)
@@ -60,7 +66,7 @@ namespace Player
         {
             Character prefab = GetCurrentSkinPrefab();
             CharacterPoint point = _positions.FirstOrDefault(x => !x.HaveCharacter);
-            Character character = Instantiate(prefab, point.transform);
+            Character character = Instantiate(prefab, point.transform.position, Quaternion.identity, null);
             character.Init(_characterData, _input);
             point.SetCharacter(character);
             _charactersList.Add(character);
@@ -70,7 +76,6 @@ namespace Player
 
         private Character GetCurrentSkinPrefab()
         {
-            Debug.Log(SaveManager.Instance.PlayerData.Capacity);
             CharacterType type = SaveManager.Instance.PlayerData.SelectedSkin;
             Character prefab = _skinsHolder.CharactersContainer.FirstOrDefault(x => x.CharacterType == type)?.Prefab;
             return prefab;
@@ -80,12 +85,13 @@ namespace Player
         {
             var prefab = GetCurrentSkinPrefab();
             _charactersList.Clear();
+            var count = _saveManager.PlayerData.Capacity;
             
-            for (int i = 0; i < _count; i++)
+            for (int i = 0; i < count; i++)
             {
                 if (!_positions[i].HaveCharacter)
                 {
-                    Character character = Instantiate(prefab, _positions[i].transform);
+                    Character character = Instantiate(prefab, _positions[i].transform.position, Quaternion.identity);
                     character.Init(_characterData, _input);
                     _positions[i].SetCharacter(character);
                     _charactersList.Add(character);

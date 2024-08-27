@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Player;
 using Player.Skins;
 using UnityEngine;
+using Zenject;
 
 namespace SaveSystem
 {
@@ -21,8 +22,12 @@ namespace SaveSystem
             DontDestroyOnLoad(this);
 
             PlayerData = LoadData();
-            
-            Debug.Log(PlayerData.Capacity);
+        }
+
+        [Inject]
+        public void Constructor()
+        {
+            PlayerData = LoadData();
         }
 
         public void Save()
@@ -31,6 +36,7 @@ namespace SaveSystem
             PlayerPrefs.SetString(_key,json);
             PlayerPrefs.Save();
         }
+        
         public void AddMoney(int value) => PlayerData.Money += value;
 
         public void OpenNewSkin(CharacterType characterType)

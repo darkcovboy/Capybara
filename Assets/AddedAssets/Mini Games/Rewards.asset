@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b45c484b7f65284fad526898ae57a67, type: 3}
+  m_Name: Rewards
+  m_EditorClassIdentifier: 
+  _rewards:
+  - Type: 1
+    Icons:
+      Sprite: {fileID: 21300000, guid: 3826cc1f1bb8d46bd945fa70fa262e23, type: 3}
+      Texture: {fileID: 2800000, guid: 3826cc1f1bb8d46bd945fa70fa262e23, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 2
+    Icons:
+      Sprite: {fileID: 21300000, guid: dc5a4ace79ac3400e871f61894fdbe97, type: 3}
+      Texture: {fileID: 2800000, guid: dc5a4ace79ac3400e871f61894fdbe97, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 3
+    Icons:
+      Sprite: {fileID: 21300000, guid: 9b9f13bfc957c4ae79cf49cc25aab917, type: 3}
+      Texture: {fileID: 2800000, guid: 9b9f13bfc957c4ae79cf49cc25aab917, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 4
+    Icons:
+      Sprite: {fileID: 21300000, guid: c5be4f39e1d3b446882c2ed794d72610, type: 3}
+      Texture: {fileID: 2800000, guid: c5be4f39e1d3b446882c2ed794d72610, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 5
+    Icons:
+      Sprite: {fileID: 21300000, guid: d478566f458334cc3a18ccf7533c7c63, type: 3}
+      Texture: {fileID: 2800000, guid: d478566f458334cc3a18ccf7533c7c63, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 6
+    Icons:
+      Sprite: {fileID: 21300000, guid: 4ef2293aacf9d44f1bd7d885ef6b7bf6, type: 3}
+      Texture: {fileID: 2800000, guid: 4ef2293aacf9d44f1bd7d885ef6b7bf6, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 7
+    Icons:
+      Sprite: {fileID: 21300000, guid: 81e63cc1bd6574dc2b5fd3c830e1e319, type: 3}
+      Texture: {fileID: 2800000, guid: 81e63cc1bd6574dc2b5fd3c830e1e319, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
+  - Type: 8
+    Icons:
+      Sprite: {fileID: 21300000, guid: 40891eee1ef564e3cb7744e1f0920af7, type: 3}
+      Texture: {fileID: 2800000, guid: 40891eee1ef564e3cb7744e1f0920af7, type: 3}
+    Amounts: 050000000a0000000f0000001400000019000000
