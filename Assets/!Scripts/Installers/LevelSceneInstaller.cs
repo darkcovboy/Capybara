@@ -1,18 +1,19 @@
-﻿using Const;
+﻿using System;
 using Items;
 using Items.Collector;
 using LevelStates;
 using LevelStates.Data;
 using LevelStates.TimerScripts;
+using Loading;
 using Player;
 using Player.Counter;
 using Player.Movement;
 using Player.PlayerStaticData;
-using SaveSystem;
-using Sirenix.OdinInspector;
 using UI.Screens;
 using UnityEngine;
 using Zenject;
+using Paths = Const.Paths;
+using Timer = LevelStates.TimerScripts.Timer;
 
 namespace Installers
 {
@@ -20,15 +21,16 @@ namespace Installers
     {
         [Header("Configs")]
         [SerializeField] private LevelData _levelData;
-        [Header("Prefabs")] 
-        [SerializeField] private CharactersGroupHolder _charactersGroupHolder;
+        [SerializeField] private MainPrefabHolder _mainPrefabHolder;
+
+        [Header("Dependencies")] 
+        [SerializeField] private LevelPrefabCreator _levelPrefabCreator;
+        [SerializeField] private ScreensHolder _screensHolder;
+
         [Header("Positions")] 
         [SerializeField] private Transform _playerPosition;
+        [SerializeField] private Transform _itemCollectorPosition;
 
-        [Title("Dependencies")] 
-        [SerializeField] private ScreensHolder _screensHolder;
-        [SerializeField] private ItemCollector _itemCollector;
-        [SerializeField] private GameState _game;
 
         public override void InstallBindings()
         {
@@ -38,24 +40,33 @@ namespace Installers
             SetupCollector();
             SetupStaticData();
             SetupPlayer();
-            SetupGame();
             SetupUI();
+            SetupGame();
+        }
+
+        private void Awake()
+        {
+            SetupLevelPrefab();
         }
 
         private void SetupUI()
         {
-            Container.Bind<VictoryScreen>().FromInstance(_screensHolder.VictoryScreen).AsSingle();
-            Container.Bind<LoseScreen>().FromInstance(_screensHolder.LoseScreen).AsSingle();
+            Container.Bind<ScreensHolder>().FromInstance(_screensHolder).AsSingle();
         }
 
         private void SetupGame()
         {
-            Container.Bind<GameState>().FromInstance(_game).AsSingle();
+            Container.Bind<GameState>().AsSingle();
         }
-        
+
+        private void SetupLevelPrefab()
+        {
+            _levelPrefabCreator.CreateLevelPrefab();
+        }
+
         private void SetupPlayer()
         {
-            var player = Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_charactersGroupHolder, _playerPosition.position,
+            var player = Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_mainPrefabHolder.CharactersGroupHolder, _playerPosition.position,
                 Quaternion.identity, null);
 
             Container.Bind<CharactersGroupHolder>().FromInstance(player).AsSingle();
@@ -72,12 +83,15 @@ namespace Installers
 
         private void SetupCollector()
         {
-            Container.BindInterfacesAndSelfTo<ItemCollector>().FromInstance(_itemCollector).AsSingle();
+            var itemCollector = Container.InstantiatePrefabForComponent<ItemCollector>(_mainPrefabHolder.ItemCollector, _itemCollectorPosition.position,
+                Quaternion.identity, null);
+            
+            Container.BindInterfacesAndSelfTo<ItemCollector>().FromInstance(itemCollector).AsSingle();
         }
 
         private void SetupMoneyCounter()
         {
-            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle().WithArguments(10);
+            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle();
         }
 
         private void SetupMovement()

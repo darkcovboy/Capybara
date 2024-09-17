@@ -7,12 +7,11 @@ using Player.Counter;
 using SaveSystem;
 using UI.Screens;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace LevelStates
 {
-    public class GameState : MonoBehaviour
+    public class GameState : IDisposable
     {
         private CharactersGroupHolder _player;
         private Timer _timer;
@@ -30,17 +29,17 @@ namespace LevelStates
             ItemCollector itemCollector,
             MoneyCounter moneyCounter,
             SaveManager saveManager,
-            VictoryScreen victoryScreen,
-            LoseScreen loseScreen,
-            LevelLoader levelLoader)
+            LevelLoader levelLoader,
+            ScreensHolder screensHolder)
         {
             _player = groupHolder;
             _timer = timer;
             _itemCollector = itemCollector;
-            _victoryScreen = victoryScreen;
             _saveManager = saveManager;
             _moneyCounter = moneyCounter;
-            _loseScreen = loseScreen;
+            _screensHolder = screensHolder;
+            _victoryScreen = screensHolder.VictoryScreen;
+            _loseScreen = screensHolder.LoseScreen;
             _levelLoader = levelLoader;
             Subscribe();
 
@@ -55,7 +54,7 @@ namespace LevelStates
             }
         }
 
-        private void OnDestroy()
+        public void Dispose()
         {
             Unsubscribe();
 
@@ -70,6 +69,12 @@ namespace LevelStates
             }
         }
 
+        public void StartGame()
+        {
+            _player.UnblockMovement();
+            _timer.Start();
+        }
+
         private void ReloadLevel()
         {
             _levelLoader.LoadScene(_saveManager.PlayerData.Level);
@@ -77,9 +82,8 @@ namespace LevelStates
 
         private void NextLevel()
         {
-            _saveManager.PlayerData.Level++;
             _saveManager.Save();
-            _levelLoader.LoadScene(_saveManager.PlayerData.Level);
+            _levelLoader.LoadScene(_saveManager.PlayerData.LastLevelId);
         }
 
         private void ShowReward(float multiplier)
@@ -87,12 +91,6 @@ namespace LevelStates
             _saveManager.PlayerData.Money += (int)(multiplier - 1) * _moneyCounter.LevelCollectedMoney;
             _saveManager.Save();
             NextLevel();
-        }
-
-        public void StartGame()
-        {
-            _player.UnblockMovement();
-            _timer.Start();
         }
 
         private void WinGame()
@@ -112,14 +110,15 @@ namespace LevelStates
 
         private void SaveProgress()
         {
-            _saveManager.PlayerData.Money += _moneyCounter.LevelCollectedMoney;
-            _saveManager.PlayerData.Level++;
-
-            if (_saveManager.PlayerData.Level == (SceneManager.sceneCountInBuildSettings - 1))
+            if (_saveManager.PlayerData.LastLevelPrefab == "Training")
             {
-                _saveManager.PlayerData.IsAllLevelsCompleted = true;
+                _saveManager.PlayerData.IsInstructionsCompleted = true;
             }
 
+            _saveManager.PlayerData.LastLevelId = LevelInfoContainer.GetRandomLevelNumber();
+            _saveManager.PlayerData.LastLevelPrefab = LevelInfoContainer.GetRandomLevelPrefab();
+            _saveManager.PlayerData.Money += _moneyCounter.LevelCollectedMoney;
+            _saveManager.PlayerData.Level++;
             _saveManager.Save();
         }
     }

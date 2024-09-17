@@ -12,8 +12,10 @@ namespace UI.Screens
         [SerializeField] private VictoryScreen _victoryScreen;
         [SerializeField] private SettingsScreen _settingsScreen;
         [SerializeField] private LoseScreen _loseScreen;
+        [SerializeField] private StartScreen _startScreen;
 
         private List<Screen> _screens = new List<Screen>();
+        private Dictionary<ScreenType, Screen> _screenDictionary;
 
         public LoseScreen LoseScreen => _loseScreen;
 
@@ -28,6 +30,18 @@ namespace UI.Screens
             _screens.Add(_victoryScreen);
             _screens.Add(_settingsScreen);
             _screens.Add(_loseScreen);
+            _screens.Add(_startScreen);
+            
+            _screenDictionary = new Dictionary<ScreenType, Screen>
+            {
+                { ScreenType.Shop, _shop },
+                { ScreenType.Leaderboard, _leaderboardScreen },
+                { ScreenType.Gameplay, _gameplayScreen },
+                { ScreenType.Victory, _victoryScreen },
+                { ScreenType.Settings, _settingsScreen },
+                { ScreenType.Lose, _loseScreen },
+                { ScreenType.Start, _startScreen}
+            };
         }
 
         public void OpenScreen(Screen currentScreen)
@@ -40,5 +54,31 @@ namespace UI.Screens
                     screen.Close();
             }
         }
+
+        public void OpenScreen(ScreenType screenType)
+        {
+            if (_screenDictionary.TryGetValue(screenType, out var screenToOpen))
+            {
+                foreach (var screen in _screens)
+                {
+                    if (screen == screenToOpen)
+                        screen.Open();
+                    else
+                        screen.Close();
+                }
+            }
+        }
     }
+    
+    public enum ScreenType
+    {
+        Shop,
+        Leaderboard,
+        Gameplay,
+        Victory,
+        Settings,
+        Lose,
+        Start
+    }
+    
 }

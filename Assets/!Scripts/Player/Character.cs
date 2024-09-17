@@ -27,23 +27,28 @@ namespace Player
             Setup();
         }
 
-        public void BlockMovement() => _movementHandler.OffMovement();
-
         public void UnblockMovement() => _movementHandler.OnMovement();
 
         public void Win()
         {
             _movementHandler.OffMovement();
             _collider.enabled = false;
-            _itemHandler.CurrentItem.Disconnect();
+            if (_itemHandler.CurrentItem != null)
+            {
+                _itemHandler.CurrentItem.Disconnect();
+            }
             _animator.PlayVictory();
         }
 
-        public void TakeCharacter()
+        public void Defeat()
         {
             _movementHandler.OffMovement();
+            _itemHandler.DisableTakingItems();
             _collider.enabled = false;
-            _itemHandler.CurrentItem.Disconnect();
+            if (_itemHandler.CurrentItem != null)
+            {
+                _itemHandler.CurrentItem.Disconnect();
+            }
             _animator.PlayDeath();
             OnDestroy?.Invoke(this);
         }

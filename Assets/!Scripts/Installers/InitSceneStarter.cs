@@ -10,7 +10,7 @@ namespace Installers
         [Inject]
         public void Constructor(SaveManager saveManager, LevelLoader levelLoader)
         {
-            levelLoader.LoadScene(saveManager.PlayerData.Level);
+            levelLoader.LoadScene(saveManager.PlayerData.LastLevelId);
         }
     }
 }

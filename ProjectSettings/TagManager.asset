@@ -12,6 +12,7 @@ TagManager:
   - KillBox
   - Bridge
   - DropBlock
+  - LevelPrefabTag
   layers:
   - Default
   - TransparentFX

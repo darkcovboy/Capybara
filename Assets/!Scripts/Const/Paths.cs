@@ -8,5 +8,6 @@
         public static readonly string HardItemPath = "Data/Item/Hard";
         public static readonly string SkinsHolderPath = "Data/SkinsContainer";
         public static readonly string PricesHolderPath = "Data/CharacterPrices";
+        public static readonly string EnemyMovementPath = "Data/EnemyMovement";
     }
 }

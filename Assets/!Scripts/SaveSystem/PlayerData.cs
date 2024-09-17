@@ -12,6 +12,9 @@ namespace SaveSystem
     {
         public int Money { get; set; }
         public int Level { get; set; }
+        public int LastLevelId { get; set; }
+        public string LastLevelPrefab { get; set; }
+        public bool IsInstructionsCompleted { get; set; }
         public CharacterType SelectedSkin { get; set; }
         public List<CharacterType> UnlockedSkins { get; set; }
         public Dictionary<CharacterType, int> AdViewsForSkins { get; set; }
@@ -23,6 +26,9 @@ namespace SaveSystem
         {
             Money = 0;
             Level = 1;
+            LastLevelId = 1;
+            LastLevelPrefab = "Level1";
+            IsInstructionsCompleted = false;
             SelectedSkin = CharacterType.CapybaraDefault;
             UnlockedSkins = new List<CharacterType> {SelectedSkin};
             Capacity = 3;

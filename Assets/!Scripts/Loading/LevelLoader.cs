@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
 using Zenject;
 
@@ -13,20 +16,9 @@ namespace Loading
         public event Action OnSceneLoaded;
         
         [SerializeField] private LoadingCurtain _curtain;
-        
-        [Inject]
-        private void Construct()
-        {
-            DontDestroyOnLoad(this.gameObject);
-        }
 
         public void LoadScene(int level)
         {
-            if (level >= SceneManager.sceneCountInBuildSettings - 1)
-            {
-                level = GenerateRandomLevel();
-            }
-
             StartCoroutine(LoadSceneAsync(level));
         }
 
@@ -34,49 +26,21 @@ namespace Loading
         {
             _curtain.Show();
 
-            AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
-            operation.allowSceneActivation = false;
+            AsyncOperation sceneOperation = SceneManager.LoadSceneAsync(levelIndex);
+            sceneOperation.allowSceneActivation = false;
 
-            while (!operation.isDone)
+            while (sceneOperation.progress < 0.9f)
             {
-                if (operation.progress >= 0.9f)
-                {
-                    OnProgressChanged?.Invoke(1f);
-                    break;
-                }
-                
-                OnProgressChanged?.Invoke(operation.progress /0.9f);
-
+                OnProgressChanged?.Invoke(sceneOperation.progress / 0.9f);
                 yield return null;
             }
-
-            operation.allowSceneActivation = true;
             
-            yield return new WaitUntil(() => operation.isDone);
+            
+            sceneOperation.allowSceneActivation = true;
+            yield return new WaitUntil(() => sceneOperation.isDone);
 
             _curtain.Hide();
-            
             OnSceneLoaded?.Invoke();
-        }
-
-        private int GenerateRandomLevel()
-        {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            int totalScenes = SceneManager.sceneCountInBuildSettings;
-
-            if (totalScenes <= 1)
-            {
-                throw new InvalidOperationException("Недостаточно уровней в настройках билда для выбора случайного уровня.");
-            }
-
-            int randomLevel;
-            do
-            {
-                // Генерируем случайный индекс уровня в диапазоне от 1 до totalScenes - 1 (исключаем 0)
-                randomLevel = UnityEngine.Random.Range(1, totalScenes);
-            } while (randomLevel == currentSceneIndex); // Повторяем, если случайный уровень совпадает с текущим
-
-            return randomLevel;
         }
     }
 }

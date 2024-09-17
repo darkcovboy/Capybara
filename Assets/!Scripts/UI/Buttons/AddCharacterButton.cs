@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Const;
 using DG.Tweening;
 using Player;
+using Player.Counter;
 using SaveSystem;
 using StaticData;
 using TMPro;
@@ -22,12 +23,14 @@ namespace UI.Buttons
         private CharactersGroupHolder _player;
         private SaveManager _saveManager;
         private List<int> _prices;
+        private MoneyCounter _moneyCounter;
 
         [Inject]
-        public void Constructor(CharactersGroupHolder player, SaveManager saveManager)
+        public void Constructor(CharactersGroupHolder player, SaveManager saveManager, MoneyCounter moneyCounter)
         {
             _player = player;
             _saveManager = saveManager;
+            _moneyCounter = moneyCounter;
             _prices = Resources.Load<UpgradeCharacterPrices>(Paths.PricesHolderPath).Prices;
         }
 
@@ -56,7 +59,7 @@ namespace UI.Buttons
 
         private void AddCharacter()
         {
-            if (!_player.IsMaxCapacity())
+            if (!_player.IsMaxCapacity() && _moneyCounter.TrySpendMoney(_prices[_saveManager.PlayerData.Capacity]))
             {
                 _saveManager.PlayerData.Capacity++;
                 _player.AddCharacter();

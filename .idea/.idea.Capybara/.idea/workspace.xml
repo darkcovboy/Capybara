@@ -20,449 +20,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b64c6e48-fd5f-4b68-a07a-4da2dad0e5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LoadingCurtain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LoadingCurtain.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Animation/HardItemAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Animation/HardItemAnimation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/StaticData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/StaticData/UpgradeCharacterPrices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/StaticData/UpgradeCharacterPrices.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ScaleDownAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ScaleDownAnimation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/IScreen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/IScreen.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LoseScreen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LoseScreen.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/RewardArrowMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/RewardArrowMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/Screen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/Screen.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/VictoryScreen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/VictoryScreen.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyParticleShower.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyParticleShower.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/TriggerDisplay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/TriggerDisplay.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/Cage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/Cage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CatcherTriggerObserver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CatcherTriggerObserver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/EnemyConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/EnemyConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/PointToPointMovementConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/RandomMovementConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/RandomMovementConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Enemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/RandomMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/RandomMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/EnemyStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/EnemyStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/IStateSwitcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/IStateSwitcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakAfterCatchState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakAfterCatchState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/CatchState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/CatchState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IStateWithData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IStateWithData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IUpdatableState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IUpdatableState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/MovementState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/MovementState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/StateBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/StateBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Extension/EnumerableExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Extension/EnumerableExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/MainPrefabHolder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/MainPrefabHolder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberColors.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberColors.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/AddressableLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/AddressableLoader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelInfoContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelInfoContainer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!SDK_Yandex/Ads/ADManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!SDK_Yandex/Ads/ADManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Const/Paths.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Const/Paths.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/ItemCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/ItemCollector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/CharactersGroupHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/CharactersGroupHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/Counter/MoneyCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Counter/MoneyCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/ItemsAction/ITriggerObserver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/ItemsAction/ITriggerObserver.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/ItemsAction/ItemHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/ItemsAction/ItemHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/SaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/AdPrice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/AdPrice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ScaleUpAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ScaleUpAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Buttons/AddCharacterButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Buttons/AddCharacterButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/GameplayScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/GameplayScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LeaderboardScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LeaderboardScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/SettingsScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/SettingsScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/StartScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/StartScreen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Mnostva_Art/Materials/!WithoutOutline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Mnostva_Art/Materials/!WithoutOutline.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Mnostva_Art/Materials/!_Color_Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Mnostva_Art/Materials/!_Color_Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Mnostva_Art/Materials/!_Glass_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Mnostva_Art/Materials/!_Glass_Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Quirky Series Vol.4 [v1.3]/_Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Quirky Series Vol.4 [v1.3]/_Scripts/Demo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Quirky Series Vol.4 [v1.3]/_Scripts/Demo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/Part 1/em_cry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/Part 1/em_cry.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/Part 1/em_laughcry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/Part 1/em_laughcry.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/Part 1/em_laughsweatdrop.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/Part 1/em_laughsweatdrop.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/em_text_ah_zz.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/em_text_ah_zz.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/em_text_haha.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Emojis/em_text_haha.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Unsorted/talkbubble_4x4_AB.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Unsorted/talkbubble_4x4_AB.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Unsorted/talkbubble_AB.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Materials/Misc/Unsorted/talkbubble_AB.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Prefabs/Interactive/Emojis/EmojiCry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Prefabs/Interactive/Emojis/EmojiCry.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/Editor/LinearMotionEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/Editor/LinearMotionEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/Editor/LinearMotionEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/Editor/LinearMotionEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/LinearMotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/LinearMotion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/LinearMotion.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/LinearMotion.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Scripts/UvScroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Scripts/UvScroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Scripts/UvScroller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Scripts/UvScroller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Shaders/Editor/StylizedSurfaceEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Shaders/Editor/StylizedSurfaceEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Shaders/Editor/StylizedSurfaceEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Shaders/Editor/StylizedSurfaceEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Shaders/GradientSkybox/Editor/GradientSkyboxEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Shaders/GradientSkybox/Editor/GradientSkyboxEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Shaders/GradientSkybox/Editor/GradientSkyboxEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Shaders/GradientSkybox/Editor/GradientSkyboxEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/FlatKitReadme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/FlatKitReadme.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/FlatKitReadme.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/FlatKitReadme.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/NetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/NetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/NetworkManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/NetworkManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/ReadmeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/ReadmeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/ReadmeEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/ReadmeEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Anvil 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Anvil 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Anvil.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Anvil.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Axe.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Axe.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Blaze.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Blaze.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/BrutePiglin.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/BrutePiglin.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Cat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Cat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Chicken.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Chicken.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Cow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Cow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Creeper.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Creeper.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Diamond.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Diamond.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Enderman.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Enderman.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Evoker.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Evoker.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Fence_Long.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Fence_Long.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Ghast.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Ghast.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Golem.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Golem.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Hoglin.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Hoglin.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Ladder.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Ladder.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Mooshroom.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Mooshroom.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Phantom.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Phantom.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pickaxe.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pickaxe.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pig.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pig.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Piglin.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Piglin.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pigman.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pigman.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pillager.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Pillager.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Rail.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Rail.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Shulker.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Shulker.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Skeleton.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Skeleton.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Slime.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Slime.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin 2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin 2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin 3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin 3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/SnowGolemWithPumpkin.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/StickyPiston.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/StickyPiston.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Stray.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Stray.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Stray_Skeleton.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Stray_Skeleton.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Strider.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Strider.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Sword 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Sword 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Sword 2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Sword 2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Sword.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Sword.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Vindicator.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Vindicator.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/VindicatorWithoutHands.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/VindicatorWithoutHands.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/WanderingTrader.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/WanderingTrader.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Warden.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Warden.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Wither.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Wither.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Wolf.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/Wolf.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/allay.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/allay.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/horse.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/horse.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/magmacube.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/magmacube.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/sheep.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/sheep.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/sheep_fur.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/sheep_fur.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/spider.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/spider.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/spider2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/spider2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/squid.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/squid.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/villager.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/villager.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/witch.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/witch.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/zombie_pigman.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/zombie_pigman.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/zombie_villager.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Materials/zombie_villager.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Allay.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Allay.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/BrutePiglin_blend.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/BrutePiglin_blend.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Cat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Cat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Chest.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Chest.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Chicken.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Chicken.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Crafting_Table.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Crafting_Table.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Diamond-Axe.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Diamond-Axe.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Diamond-Pickaxe.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Diamond-Pickaxe.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Diamond.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Diamond.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Enderman.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Enderman.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Evoker.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Evoker.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Fence.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Fence.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Fence_Gate.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Fence_Gate.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Fence_long.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Fence_long.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Furnace.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Furnace.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Grass2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Grass2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Grass_Block.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Grass_Block.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Hoglin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Hoglin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Lectern.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Lectern.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Lever.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Lever.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Minecraft Cool Creeper.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Minecraft Cool Creeper.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Minecraft Stone Sword.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Minecraft Stone Sword.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Mineways2Skfb.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Mineways2Skfb.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Mooshroom.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Mooshroom.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Oak_Sign.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Oak_Sign.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Phantom.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Phantom.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Piglin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Piglin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Pillager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Pillager.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Rail.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Rail.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Shulker.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Shulker.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Skeleton.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Skeleton.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Slime_blend.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Slime_blend.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/SnowGolemWithPumpkin.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/SnowGolemWithPumpkin.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/StickyPiston.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/StickyPiston.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Stray.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Stray.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Strider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Strider.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Tree.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Tree.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Vindicator.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Vindicator.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/VindicatorWithoutHands.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/VindicatorWithoutHands.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/WanderingTrader.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/WanderingTrader.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Warden.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/Warden.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/blaze.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/blaze.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/cave_spider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/cave_spider.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/cow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/cow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/ghast.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/ghast.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/horse.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/horse.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/iron_golem.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/iron_golem.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/ladder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/ladder.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/magmacube.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/magmacube.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/pig.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/pig.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/pigman.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/pigman.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/sheep.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/sheep.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/spider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/spider.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/squid.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/squid.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/villager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/villager.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/witch.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/witch.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/wither.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/wither.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/wolf.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/wolf.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/zombie_pigman.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/zombie_pigman.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/zombie_villager.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Prefabs/zombie_villager.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures Block.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures Block/diamond.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures Block/diamond.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Box001_2017-03-19_17-34-42_complete.rpf_converted.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Box001_2017-03-19_17-34-42_complete.rpf_converted.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Box002_2017-03-19_17-34-28_complete.rpf_converted.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Box002_2017-03-19_17-34-28_complete.rpf_converted.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Box003_2017-03-19_17-34-14_complete.rpf_converted.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Box003_2017-03-19_17-34-14_complete.rpf_converted.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Cool Creeper Texture (4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Cool Creeper Texture (4).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Fence_long.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Fence_long.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Mineways2Skfb-RGBA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Mineways2Skfb-RGBA.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Pickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Pickaxe.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Rail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/Rail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/VindicatorWithoutHands.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/VindicatorWithoutHands.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/allay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/allay.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/blaze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/blaze.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/carved_pumpkin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/carved_pumpkin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/cave_spider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/cave_spider.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/chicken.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/chicken.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/cow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/cow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/enderman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/enderman.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/enderman_eyes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/enderman_eyes.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/evoker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/evoker.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/ghast.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/ghast.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/hoglin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/hoglin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/horse_creamy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/horse_creamy.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/iron_golem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/iron_golem.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/jellie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/jellie.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/ladder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/ladder.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/magmacube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/magmacube.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/phantom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/phantom.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pig.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/piglin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/piglin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/piglin_brute.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/piglin_brute.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pigman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pigman.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pillager.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pillager.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pumpkin_side.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pumpkin_side.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pumpkin_top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/pumpkin_top.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/red_mooshroom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/red_mooshroom.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/sheep.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/sheep.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/sheep_fur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/sheep_fur.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/shulker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/shulker.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/shulker_magenta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/shulker_magenta.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/skeleton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/skeleton.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/slime.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/slime.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/snow_golem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/snow_golem.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/spider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/spider.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/squid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/squid.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/stray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/stray.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/stray_overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/stray_overlay.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/strider.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/strider.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/villager_farmer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/villager_farmer.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/vindicator.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/vindicator.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wandering_trader.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wandering_trader.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/warden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/warden.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/witch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/witch.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wither.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wither.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wither_opacity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wither_opacity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wolf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/wolf.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_farmer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_farmer.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_farmer_opacity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_farmer_opacity.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_pigman.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_pigman.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_pigman_opacity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Minecraft/Textures/zombie_pigman_opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Strawberry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Strawberry.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 3 - Mode_Steps-Toony/3-Strawberry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 3 - Mode_Steps-Toony/3-Strawberry.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/ItemCollector/ItemCollector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/ItemCollector/ItemCollector.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Number/ItemNumber.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/Number/ItemNumber.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlaybleCharacters/Capybara.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlaybleCharacters/Capybara.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MoneyShower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MoneyShower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Initial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Initial.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Records/Screenshots.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Records/Screenshots.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -474,61 +145,62 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ToggleGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/PointToPointMovementConfig.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Skins/CharacterType.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/InfoShower/ItemCollectedShower.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/AdPrice.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/TestMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/StaticData/UpgradeChacterPrices.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/StaticData/UpgradeCharacterPrices.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/StateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IState.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/Transitions/Transition.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/Transitions/CatchTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CharacterCatcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/IStateSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IPointToPointMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IRandomMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/EnemyConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/PointToPointMovementConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/TriggerDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/BreakWatcher.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/Player/ItemsAction/ItemHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Animation/HardItemAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Const/Paths.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ScaleDownAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ScaleUpAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/CharactersGroupHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Buttons/AddCharacterButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/FlatKit/[Render Pipeline] Built-in/ImageEffects/Scripts/FogImageEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/FlatKit/[Render Pipeline] Built-in/ImageEffects/Scripts/OutlineImageEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Demo/Scripts/ETFXFireProjectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/AddedAssets/Epic Toon FX/Demo/Scripts/VFX Library/UICanvasManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/FlatKit/Demos/Common/Scripts/Motion/Editor/LinearMotionEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/FlatKit/Utils/Readme/Editor/ReadmeEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mini Games/MiniGames/Coin Drop/Scripts/Editor/CoinDropEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mini Games/MiniGames/Hit Reward/Scripts/Editor/HitRewardEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mini Games/MiniGames/Slot Machine/Scripts/Editor/SlotMachineEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mini Games/MiniGames/Lucky Wheel/Scripts/Editor/LuckyWheelEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mini Games/Scripts/Editor/MiniGameEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/!SDK_Yandex/Ads/ADManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/ItemCollector.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/IScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LeaderboardScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/GameplayScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/SettingsScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/StartScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CageSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/EnemyStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/CatchState.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/Cage.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/RandomMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/RewardArrowMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/VictoryScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LoseScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/SceneLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Buttons/AddCharacterButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyParticleShower.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CatcherTriggerObserver.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakState.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakAfterCatchState.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/MovementState.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberColors.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Extension/EnumerableExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Counter/MoneyCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/LevelResources/AddressableLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LoadingCurtain.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstalller.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/MainPrefabHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelInfoContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/AddressableLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/Binders/NonLazyBinder.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/StartScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/Screen.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" />
       </list>
     </option>
   </component>
@@ -544,6 +216,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -586,6 +259,16 @@
       <workItem from="1720358217392" duration="4931000" />
       <workItem from="1720446262650" duration="6906000" />
       <workItem from="1724690657811" duration="5159000" />
+      <workItem from="1724744129788" duration="3078000" />
+      <workItem from="1724831173935" duration="2100000" />
+      <workItem from="1725609555332" duration="4602000" />
+      <workItem from="1725711324721" duration="4085000" />
+      <workItem from="1725898078812" duration="6577000" />
+      <workItem from="1726234596040" duration="4443000" />
+      <workItem from="1726303447787" duration="12556000" />
+      <workItem from="1726420796222" duration="3696000" />
+      <workItem from="1726505853800" duration="1558000" />
+      <workItem from="1726512735611" duration="570000" />
     </task>
     <servers />
   </component>
@@ -610,25 +293,34 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="571" y="86" key="RiderGenerateDialog" timestamp="1720464853341">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2872" y="146" key="RiderGenerateDialog" timestamp="1726421056149">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="571" y="86" key="RiderGenerateDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1720464853341" />
-    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1720455747032">
+    <state x="2872" y="146" key="RiderGenerateDialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1726421056149" />
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1726506826530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1720455747032" />
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1726506826530" />
     <state x="2326" y="177" width="1032" height="811" key="dock-window-1" timestamp="1720192475526">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2326" y="177" width="1032" height="811" key="dock-window-1/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1720192475526" />
-    <state x="2481" y="241" width="799" height="558" key="find.popup" timestamp="1724695466202">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2668" y="324" width="1066" height="752" key="find.popup" timestamp="1725715051175">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2481" y="241" width="799" height="558" key="find.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1724695466202" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1719327406131">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2668" y="324" width="1066" height="752" key="find.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1725715051175" />
+    <state x="2856" y="330" key="run.anything.popup" timestamp="1726328152078">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2856" y="330" key="run.anything.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1726328152078" />
+    <state x="2639" y="246" width="1120" height="1153" key="search.everywhere.popup" timestamp="1725714940018">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1719327406131" />
+    <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1724832408326" />
+    <state x="2639" y="246" width="1120" height="1153" key="search.everywhere.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1725714940018" />
   </component>
 </project>

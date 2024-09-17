@@ -14,7 +14,6 @@ namespace Installers
         {
             Container.Bind<SaveManager>().FromInstance(_saveManager).AsSingle();
             Container.Bind<LevelLoader>().FromInstance(_levelLoader).AsSingle();
-            Debug.Log("Its work");
         }
     }
 }

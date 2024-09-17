@@ -15,43 +15,37 @@ namespace UI.Screens
         [SerializeField] private Button _leaderboardButton;
         [SerializeField] private Button _shopButton;
         [SerializeField] private Button _settingsButton;
-        [Header("Screens")]
-        [SerializeField] private GameplayScreen _gameplayScreen;
-        [SerializeField] private LeaderboardScreen _leaderboardScreen;
-        [SerializeField] private SettingsScreen _settingsScreen;
-        [SerializeField] private Shop _shopScreen;
         
-        private CharactersGroupHolder _player;
         private GameState _gameState;
+        private ScreensHolder _screensHolder;
 
         [Inject]
-        public void Constructor(CharactersGroupHolder player, GameState gameState)
+        public void Constructor(ScreensHolder screensHolder, GameState gameState)
         {
-            _player = player;
+            _screensHolder = screensHolder;
             _gameState = gameState;
         }
 
         private void OnEnable()
         {
-            _leaderboardButton.onClick.AddListener(_leaderboardScreen.gameObject.Activate);
-            _shopButton.onClick.AddListener(_shopScreen.gameObject.Activate);
-            _settingsButton.onClick.AddListener(_settingsScreen.gameObject.Activate);
+            _leaderboardButton.onClick.AddListener(() => _screensHolder.OpenScreen(ScreenType.Leaderboard));
+            _shopButton.onClick.AddListener(() => _screensHolder.OpenScreen(ScreenType.Shop));
+            _settingsButton.onClick.AddListener(() => _screensHolder.OpenScreen(ScreenType.Settings));
+            _startGameplayButton.onClick.AddListener(StartGame);
+        }
+
+        private void OnDisable()
+        {
+            _leaderboardButton.onClick.RemoveListener(() => _screensHolder.OpenScreen(ScreenType.Leaderboard));
+            _shopButton.onClick.RemoveListener(() => _screensHolder.OpenScreen(ScreenType.Shop));
+            _settingsButton.onClick.RemoveListener(() => _screensHolder.OpenScreen(ScreenType.Settings));
             _startGameplayButton.onClick.AddListener(StartGame);
         }
 
         private void StartGame()
         {
-            gameObject.SetActive(false);
-            _gameplayScreen.gameObject.Activate();
+            _screensHolder.OpenScreen(ScreenType.Gameplay);
             _gameState.StartGame();
-        }
-
-        private void OnDisable()
-        {
-            _leaderboardButton.onClick.RemoveListener(_leaderboardScreen.gameObject.Activate);
-            _shopButton.onClick.RemoveListener(_shopScreen.gameObject.Activate);
-            _settingsButton.onClick.RemoveListener(_settingsScreen.gameObject.Activate);
-            _startGameplayButton.onClick.AddListener(StartGame);
         }
     }
 }

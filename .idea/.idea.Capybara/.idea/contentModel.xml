@@ -18,12 +18,54 @@
             <e p="Paths.cs" t="Include" />
             <e p="UsefulConst.cs" t="Include" />
           </e>
+          <e p="Enemies" t="Include">
+            <e p="Animation" t="Include">
+              <e p="EnemyAnimation.cs" t="Include" />
+              <e p="EnemyParticleShower.cs" t="Include" />
+              <e p="TriggerDisplay.cs" t="Include" />
+            </e>
+            <e p="Catcher" t="Include">
+              <e p="Cage.cs" t="Include" />
+              <e p="CatcherTriggerObserver.cs" t="Include" />
+            </e>
+            <e p="Configs" t="Include">
+              <e p="EnemyConfig.cs" t="Include" />
+              <e p="PointToPointMovementConfig.cs" t="Include" />
+              <e p="RandomMovementConfig.cs" t="Include" />
+            </e>
+            <e p="Enemy.cs" t="Include" />
+            <e p="Fabric" t="Include">
+              <e p="EnemyFabric.cs" t="Include" />
+            </e>
+            <e p="Movement" t="Include">
+              <e p="IMovement.cs" t="Include" />
+              <e p="PointToPointMovement.cs" t="Include" />
+              <e p="RandomMovement.cs" t="Include" />
+            </e>
+            <e p="StateMachine" t="Include">
+              <e p="EnemyStateMachine.cs" t="Include" />
+              <e p="IStateSwitcher.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="BreakAfterCatchState.cs" t="Include" />
+                <e p="BreakState.cs" t="Include" />
+                <e p="CatchState.cs" t="Include" />
+                <e p="IState.cs" t="Include" />
+                <e p="IStateWithData.cs" t="Include" />
+                <e p="IUpdatableState.cs" t="Include" />
+                <e p="MovementState.cs" t="Include" />
+                <e p="StateBase.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Extension" t="Include">
+            <e p="EnumerableExtension.cs" t="Include" />
             <e p="GameObjectExtension.cs" t="Include" />
           </e>
           <e p="Installers" t="Include">
+            <e p="EnemyInstaller.cs" t="Include" />
             <e p="InitSceneStarter.cs" t="Include" />
             <e p="LevelSceneInstaller.cs" t="Include" />
+            <e p="MainPrefabHolder.cs" t="Include" />
             <e p="ProjectInstaller.cs" t="Include" />
           </e>
           <e p="Items" t="Include">
@@ -32,6 +74,7 @@
               <e p="IItemCollected.cs" t="Include" />
               <e p="ItemCollector.cs" t="Include" />
               <e p="Numbers" t="Include">
+                <e p="NumberColors.cs" t="Include" />
                 <e p="NumberObject.cs" t="Include" />
                 <e p="NumberObjectPool.cs" t="Include" />
                 <e p="NumberSpawner.cs" t="Include" />
@@ -55,7 +98,10 @@
             </e>
           </e>
           <e p="Loading" t="Include">
+            <e p="AddressableLoader.cs" t="Include" />
+            <e p="LevelInfoContainer.cs" t="Include" />
             <e p="LevelLoader.cs" t="Include" />
+            <e p="LevelPrefabCreator.cs" t="Include" />
             <e p="LoadingCurtain.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -179,6 +225,11 @@
               </e>
             </e>
             <e p="ReadMe.txt" t="Include" />
+          </e>
+          <e p="BizulkaProduction" t="Include">
+            <e p="Stickman sphere head vol.1 gang" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
           </e>
           <e p="CuteKawaiiGUIPack" t="Include">
             <e p="Demo" t="Include">
@@ -596,6 +647,19 @@
                 </e>
               </e>
               <e p="Modules" t="Include">
+                <e p="Unity.Addressables" t="Include">
+                  <e p="AddressablesInspectors.cs" t="Include" />
+                  <e p="manifest.txt" t="Include" />
+                  <e p="Sirenix.OdinInspector.Modules.Unity.Addressables.asmdef" t="Include" />
+                  <e p="Validators" t="Include">
+                    <e p="AssetLabelReferenceValidator.cs" t="Include" />
+                    <e p="AssetReferenceValidator.cs" t="Include" />
+                    <e p="CheckDuplicateBundleDependenciesValidator.cs" t="Include" />
+                    <e p="CheckResourcesToAddressableDuplicateDependenciesValidator.cs" t="Include" />
+                    <e p="DisallowAddressableSubAssetFieldAttributeValidator.cs" t="Include" />
+                    <e p="MissingAddressableGroupReferenceValidator.cs" t="Include" />
+                  </e>
+                </e>
                 <e p="Unity.Mathematics" t="Include">
                   <e p="manifest.txt" t="Include" />
                   <e p="MathematicsDrawers.cs" t="Include" />
@@ -1697,6 +1761,7 @@
       <e p="Polyperfect.Common.csproj" t="IncludeRecursive" />
       <e p="SimpleInput.Editor.csproj" t="IncludeRecursive" />
       <e p="SimpleInput.Runtime.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.Modules.Unity.Addressables.csproj" t="IncludeRecursive" />
       <e p="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="Zenject-Editor.csproj" t="IncludeRecursive" />

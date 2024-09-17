@@ -22,6 +22,7 @@ namespace Player.Movement
         private Vector3 _movementDirection;
         private float _currentSpeed;
         private float _velocity;
+        private bool _canMove;
 
         public void Init(float speed, IInput input)
         {
@@ -61,16 +62,25 @@ namespace Player.Movement
 
         public void OnMovement()
         {
+            _canMove = true;
+            _rigidbody.interpolation = RigidbodyInterpolation.Interpolate;
+            _rigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
             _rigidbody.isKinematic = false;
         }
 
         public void OffMovement()
         {
+            _canMove = false;
+            _rigidbody.collisionDetectionMode = CollisionDetectionMode.Discrete;
+            _rigidbody.interpolation = RigidbodyInterpolation.None;
             _rigidbody.isKinematic = true;
         }
 
         private void Move()
         {
+            if(!_canMove)
+                return;
+            
             if (_movementDirection.magnitude > 0f)
             {
                 HandleRotation(_movementDirection);

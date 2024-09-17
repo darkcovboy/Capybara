@@ -1,4 +1,5 @@
 ﻿using System;
+using SaveSystem;
 
 namespace Player.Counter
 {
@@ -9,9 +10,9 @@ namespace Player.Counter
 
         public int LevelCollectedMoney { get; private set; } 
 
-        public MoneyCounter(int startMoney)
+        public MoneyCounter(SaveManager saveManager)
         {
-            Money = startMoney;
+            Money = saveManager.PlayerData.Money;
             LevelCollectedMoney = 0;
         }
 
@@ -45,13 +46,19 @@ namespace Player.Counter
             OnMoneyChanged?.Invoke(Money);
         }
 
-        public void TakeMoney(int value)
+        public bool TrySpendMoney(int value)
         {
             if(value <= 0)
                 throw new ArgumentException(nameof(value));
 
-            Money -= value;
-            OnMoneyChanged?.Invoke(Money);
+            if (HaveMoney(value))
+            {
+                Money -= value;
+                OnMoneyChanged?.Invoke(Money);
+                return true;
+            }
+
+            return false;
         }
     }
 }

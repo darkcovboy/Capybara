@@ -11,7 +11,7 @@ namespace Player.ItemsAction
         
         [Header("Dependency")]
         [SerializeField] private PlayerAnimator _animator;
-        [SerializeField] private PlayerItemObserver playerItem;
+        [SerializeField] private PlayerItemObserver _playerItem;
         [SerializeField] private Transform _itemPointHandler;
         
         public bool HaveItem => CurrentItem != null;
@@ -20,7 +20,7 @@ namespace Player.ItemsAction
         private void Start()
         {
             CurrentItem = null;
-            playerItem.Enter += CheckAndPickItem;
+            _playerItem.Enter += CheckAndPickItem;
         }
 
         private void OnValidate()
@@ -31,7 +31,12 @@ namespace Player.ItemsAction
 
         private void OnDestroy()
         {
-            playerItem.Enter -= CheckAndPickItem;
+            _playerItem.Enter -= CheckAndPickItem;
+        }
+
+        public void DisableTakingItems()
+        {
+            _playerItem.gameObject.SetActive(false);
         }
 
         public void GiveItem()

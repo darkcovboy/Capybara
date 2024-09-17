@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0cb54c40cb44618efe330e2e4a69ee, type: 3}
+  m_Name: PrefabHolder
+  m_EditorClassIdentifier: 
+  <CharactersGroupHolder>k__BackingField: {fileID: 9148279664439862151, guid: 310acfbf0ca60b645b65c94f98d0487a, type: 3}
+  <ScreensHolder>k__BackingField: {fileID: 221332453603098231, guid: 9ffc039ce558e864cbc22dbb19b11eaa, type: 3}
+  <ItemCollector>k__BackingField: {fileID: 5075468573736073949, guid: d768ef2d61c901943a0639df4b3a10b8, type: 3}

@@ -21,8 +21,9 @@ namespace Items.Collector.Numbers
             _initialScale = transform.localScale;
         }
 
-        public void Initialize(int value)
+        public void Initialize(int value, Color color)
         {
+            _text.outlineColor = color;
             _text.text = value.ToString();
             Animate();
         }

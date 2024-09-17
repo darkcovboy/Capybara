@@ -1,4 +1,5 @@
 ﻿using System;
+using Extension;
 using UnityEngine;
 
 namespace Items.Collector.Numbers
@@ -8,6 +9,7 @@ namespace Items.Collector.Numbers
         [SerializeField] private ItemCollector _itemCollector;
         [SerializeField] private NumberObjectPool _numberObjectPool;
         [SerializeField] private Transform _spawnPoint;
+        [SerializeField] private NumberColors _numberColors;
 
         private void Awake()
         {
@@ -24,7 +26,8 @@ namespace Items.Collector.Numbers
             NumberObject numberObject = _numberObjectPool.Get();
             numberObject.transform.position = _spawnPoint.position;
             numberObject.gameObject.SetActive(true);
-            numberObject.Initialize(value);
+            Color color = _numberColors.Colors.PickRandom();
+            numberObject.Initialize(value, color);
         }
     }
 }

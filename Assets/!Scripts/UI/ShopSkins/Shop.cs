@@ -91,9 +91,8 @@ namespace UI.ShopSkins
 
     private void OnBuyButtonClick()
     {
-        if(_moneyCounter.HaveMoney(_previousSkinView.Price))
+        if(_moneyCounter.TrySpendMoney(_previousSkinView.Price))
         {
-            _moneyCounter.TakeMoney(_previousSkinView.Price);
             _shopPanel.OpenSkin(_previousSkinView);
             SelectSkin();
             _previousSkinView.Unlock();
