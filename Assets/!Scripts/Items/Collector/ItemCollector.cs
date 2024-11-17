@@ -1,6 +1,7 @@
 ﻿using System;
 using LevelStates;
 using Player.Counter;
+using SaveSystem;
 using UnityEngine;
 using Zenject;
 
@@ -15,10 +16,10 @@ namespace Items.Collector
 
         [Header("Prefab dependencies")]
         [SerializeField] private CollectorItemObserver _collectorItemObserver;
-
         [SerializeField] private Transform _pointForItem;
 
         private MoneyCounter _moneyCounter;
+        private SaveManager _saveManager;
         private int _amountOfCollected = 0;
         private int _maxItems;
 
@@ -26,10 +27,10 @@ namespace Items.Collector
 
 
         [Inject]
-        public void Constructor(MoneyCounter moneyCounter)
+        public void Constructor(MoneyCounter moneyCounter, SaveManager saveManager)
         {
             _moneyCounter = moneyCounter;
-            _maxItems = CalculateItems();
+            _saveManager = saveManager;
         }
 
         private void Start()
@@ -42,10 +43,16 @@ namespace Items.Collector
             _collectorItemObserver.Enter -= CollectItem;
         }
 
+        public void CalculateItems()
+        {
+            _maxItems = (int)(FindObjectsOfType<Item>().Length * 0.9f);
+        }
+
         private void CollectItem(Item item)
         {
-            _moneyCounter.Add(item.ItemData.Reward);
-            OnRewardCollected?.Invoke(item.ItemData.Reward);
+            int reward = item.ItemData.Reward * _saveManager.PlayerData.MoneyMultiplier;
+            _moneyCounter.Add(reward);
+            OnRewardCollected?.Invoke(reward);
             item.ConnectTo(_pointForItem, true);
 
             _amountOfCollected++;
@@ -56,7 +63,5 @@ namespace Items.Collector
                 OnGameWin?.Invoke();
             }
         }
-
-        private int CalculateItems() => FindObjectsOfType<Item>().Length;
     }
 }

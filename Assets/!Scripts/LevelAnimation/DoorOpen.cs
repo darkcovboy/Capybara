@@ -15,7 +15,7 @@ namespace LevelAnimation
         
         private void OnTriggerEnter(Collider other)
         {
-            if(!_isOpen)
+            if(_isOpen)
                 return;
 
             if (!other.GetComponent<Character>()) return;

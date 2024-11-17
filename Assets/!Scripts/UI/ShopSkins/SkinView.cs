@@ -31,6 +31,8 @@ namespace UI.ShopSkins
         public bool IsSelected { get; private set; }
         public int Price => CharacterSkinItem.Price;
         public ViewModel ViewModel => CharacterSkinItem.ViewModel;
+        public int Stars => CharacterSkinItem.Stars;
+        public string ModelName => CharacterSkinItem.ModelName;
 
         public void Initiliaze(CharacterSkinItem skinItem)
         {

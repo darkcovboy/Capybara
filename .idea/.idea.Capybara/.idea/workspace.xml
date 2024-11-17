@@ -20,22 +20,332 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b64c6e48-fd5f-4b68-a07a-4da2dad0e5c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelAnimation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelAnimation/DoorOpen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelAnimation/DoorOpen.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyIndicator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyIndicator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyPoint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyPoint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardItemFabric.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardItemFabric.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/Ranks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/Ranks.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Level.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Level.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/ForceMover.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/ForceMover.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/CameraFollowTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/GroupHolderTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/GroupHolderTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/MovementHandlerTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/MovementHandlerTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/ObjectMoverTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Test/ObjectMoverTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/RotateObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/RotateObjects/ModelRotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/RotateObjects/ModelRotation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Card.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Card.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/CardFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/CardFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Useful.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Useful/ItemShowerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Useful/ItemShowerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Useful/SkinsScreenshotsMaker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/!Scripts/Useful/SkinsScreenshotsMaker.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Capybara/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 6 - Var-TwoColor/6-TwoColor-Color1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 6 - Var-TwoColor/6-TwoColor-Color1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 6 - Var-TwoColor/6-TwoColor-Color2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 6 - Var-TwoColor/6-TwoColor-Color2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 6 - Var-TwoColor/6-TwoColor-Color3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 6 - Var-TwoColor/6-TwoColor-Color3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 7 - Var-OutlineImageEffect/7-Color1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 7 - Var-OutlineImageEffect/7-Color1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Room/Room-Materials/Color1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Room/Room-Materials/Color1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Room/Room-Materials/Color2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Room/Room-Materials/Color2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Room/Room-Materials/Color3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Room/Room-Materials/Color3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/TwoColorVasePreset01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/TwoColorVasePreset01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/TwoColorVasePreset03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/TwoColorVasePreset03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/ItemCollector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/ItemCollector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Items/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/LevelAnimation/DoorOpen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelAnimation/DoorOpen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/TimerScripts/ICoroutineRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/TimerScripts/ICoroutineRunner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/TimerScripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/LevelStates/TimerScripts/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/CharactersGroupHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/CharactersGroupHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/Player/Skins/CharacterType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/Player/Skins/CharacterType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/InfoShower/ItemCollectedShower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/InfoShower/ItemCollectedShower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LeaderboardScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LeaderboardScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/RewardArrowMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/RewardArrowMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/VictoryScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/VictoryScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/CharacterSkinItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/CharacterSkinItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/SkinPlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/SkinPlacement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/SkinView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/SkinView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Grass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Leaf 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Leaf 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Sleep.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Sleep.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Smoke 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Smoke 3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Splash 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Splash 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Splash 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Splash 3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Thunderball.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Anime Particles/Particles/Materials/Thunderball.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_AlienAntenna01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_AlienAntenna01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Antenna01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Antenna01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_AntlerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_AntlerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ArmyHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ArmyHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_AstronautHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_AstronautHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BachelorHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BachelorHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BaseballHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BaseballHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BeachHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BeachHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BeerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BeerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BigHornedHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BigHornedHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BikeHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_BikeHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Bunnyears01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Bunnyears01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CactusHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CactusHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CandleHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CandleHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CaptainsHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CaptainsHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ChefHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ChefHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ChristmasElfHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ChristmasElfHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Coin01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Coin01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CowboyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CowboyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CrownHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CrownHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CrownHat02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CrownHat02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CylinderHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_CylinderHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DetectiveHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DetectiveHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DevilHorns01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DevilHorns01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DinosaurHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DinosaurHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DivingHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_DivingHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_EiffeltowerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_EiffeltowerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ElephantHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ElephantHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ExecutionerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ExecutionerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FBIHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FBIHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FanHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FanHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FeatherHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FeatherHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FirefighterHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FirefighterHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FlamingoHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FlamingoHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FlowerCrown01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FlowerCrown01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Flowerpot01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Flowerpot01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FrenchHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FrenchHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FruitHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_FruitHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_GladiatorHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_GladiatorHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_GladiatorHelmet02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_GladiatorHelmet02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_GreatHelm01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_GreatHelm01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_HardHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_HardHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Helmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Helmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_JesterHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_JesterHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_KettleHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_KettleHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_KnightHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_KnightHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_KnightHelmet02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_KnightHelmet02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_LaurelWreath01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_LaurelWreath01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_LeatherCap01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_LeatherCap01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_LeprechaunHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_LeprechaunHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MafiaHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MafiaHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MelonHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MelonHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MinerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MinerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MongolianHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MongolianHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MorionHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MorionHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MushroomHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_MushroomHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_NurseHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_NurseHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Paperbag01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_Paperbag01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PartyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PartyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PharaohHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PharaohHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PirateHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PirateHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PoliceHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PoliceHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PopeHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_PopeHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RiceHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RiceHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RobinHoodHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RobinHoodHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RugbyHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RugbyHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RussianHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_RussianHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SafariHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SafariHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SailorHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SailorHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SamuraiHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SamuraiHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SantaHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SantaHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ShamanHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ShamanHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SharkHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SharkHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SleepyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SleepyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SmallHornedHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SmallHornedHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SombreroHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SombreroHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SpiderHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SpiderHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SpikyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_SpikyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TiaraCrown01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TiaraCrown01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TinfoilHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TinfoilHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ToyWinderHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_ToyWinderHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TrafficCone01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TrafficCone01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TurbanHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_TurbanHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_UmbrellaHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_UmbrellaHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_UncleSamHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_UncleSamHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_UnicornHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_UnicornHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_VikingHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_VikingHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_WingedHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_WingedHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_WinterHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_WinterHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_WitchHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Flat/mat_WitchHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_AlienAntenna01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_AlienAntenna01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Antenna01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Antenna01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_AntlerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_AntlerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ArmyHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ArmyHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_AstronautHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_AstronautHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BachelorHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BachelorHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BaseballHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BaseballHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BeachHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BeachHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BeerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BeerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BigHornedHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BigHornedHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BikeHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_BikeHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Bunnyears01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Bunnyears01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CactusHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CactusHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CandleHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CandleHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CaptainsHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CaptainsHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ChefHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ChefHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ChristmasElfHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ChristmasElfHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Coin01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Coin01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CowboyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CowboyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CrownHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CrownHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CrownHat02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CrownHat02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CylinderHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_CylinderHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DetectiveHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DetectiveHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DevilHorns01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DevilHorns01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DinosaurHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DinosaurHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DivingHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_DivingHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_EiffeltowerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_EiffeltowerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ElephantHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ElephantHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ExecutionerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ExecutionerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FBIHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FBIHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FanHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FanHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FeatherHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FeatherHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FirefighterHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FirefighterHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FlamingoHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FlamingoHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FlowerCrown01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FlowerCrown01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Flowerpot01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Flowerpot01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FrenchHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FrenchHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FruitHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_FruitHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_GladiatorHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_GladiatorHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_GladiatorHelmet02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_GladiatorHelmet02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_GreatHelm01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_GreatHelm01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_HardHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_HardHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Helmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Helmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_JesterHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_JesterHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_KettleHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_KettleHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_KnightHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_KnightHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_KnightHelmet02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_KnightHelmet02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_LaurelWreath01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_LaurelWreath01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_LeatherCap01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_LeatherCap01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_LeprechaunHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_LeprechaunHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MafiaHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MafiaHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MelonHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MelonHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MinerHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MinerHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MongolianHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MongolianHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MorionHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MorionHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MushroomHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_MushroomHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_NurseHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_NurseHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Paperbag01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_Paperbag01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PartyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PartyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PharaohHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PharaohHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PirateHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PirateHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PoliceHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PoliceHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PopeHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_PopeHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RiceHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RiceHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RobinHoodHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RobinHoodHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RugbyHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RugbyHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RussianHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_RussianHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SafariHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SafariHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SailorHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SailorHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SamuraiHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SamuraiHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SantaHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SantaHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ShamanHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ShamanHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SharkHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SharkHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SleepyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SleepyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SmallHornedHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SmallHornedHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SombreroHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SombreroHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SpiderHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SpiderHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SpikyHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_SpikyHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TiaraCrown01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TiaraCrown01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TinfoilHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TinfoilHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ToyWinderHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_ToyWinderHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TrafficCone01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TrafficCone01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TurbanHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_TurbanHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_UmbrellaHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_UmbrellaHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_UncleSamHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_UncleSamHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_UnicornHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_UnicornHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_VikingHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_VikingHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_WingedHelmet01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_WingedHelmet01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_WinterHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_WinterHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_WitchHat01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/LowpolyHats/Materials/Smooth/mat_WitchHat01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddedAssets/Quirky Series Vol.4 [v1.3]/River Vol.2/Animations/AC_Capybara.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddedAssets/Quirky Series Vol.4 [v1.3]/River Vol.2/Animations/AC_Capybara.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car1Chrome2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car1Chrome2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car1Plates.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car1Plates.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car2Body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car2Body.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car2Chrome2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set1/Car-Set1-Car2Chrome2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set2/Car-Set2-CarChrome.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set2/Car-Set2-CarChrome.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set4/Car-Set4-Body2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set4/Car-Set4-Body2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set4/Car-Set4-Body3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Car/Car-Materials/Car-Materials-Set4/Car-Set4-Body3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 1 - Mode_None-Completely Flat/1-Apple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 1 - Mode_None-Completely Flat/1-Apple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 1 - Mode_None-Completely Flat/1-Vase.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 1 - Mode_None-Completely Flat/1-Vase.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Grape.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Grape.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Grenade.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Grenade.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Leaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Leaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Pear1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Pear1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Pear2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Pear2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Plane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Plane2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] Fruit Vase/FruitVase-Materials/FV-Scene 2 - Mode_Single/2-Plane2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] IslandWithTrees/IslandWithTrees-Materials/IslandWithTrees-Leaves.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] IslandWithTrees/IslandWithTrees-Materials/IslandWithTrees-Leaves.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] IslandWithTrees/IslandWithTrees-Materials/IslandWithTrees-Pine2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] IslandWithTrees/IslandWithTrees-Materials/IslandWithTrees-Pine2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] IslandWithTrees/IslandWithTrees-Materials/IslandWithTrees-Pine3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] IslandWithTrees/IslandWithTrees-Materials/IslandWithTrees-Pine3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] NormalMapsTree/NormalMapsTree-Materials/Plane-Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/Demos/[Demo] NormalMapsTree/NormalMapsTree-Materials/Plane-Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/DarkPaleWhiteRim__StylSurf_Single_Rim.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/DarkPaleWhiteRim__StylSurf_Single_Rim.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/LacquerBlack__StylSurf_Single_ExCel_Spec_Rim.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/LacquerBlack__StylSurf_Single_ExCel_Spec_Rim.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/LacquerGray__StylSurf_Single_ExCel_Spec_Rim 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/LacquerGray__StylSurf_Single_ExCel_Spec_Rim 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/Metallic03__StylSurf_Single_ExCel_Spec_Rim.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/Metallic03__StylSurf_Single_ExCel_Spec_Rim.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/WhiteWithBlackRim__StylSurf_Single_Spec_Rim.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Materials/WhiteWithBlackRim__StylSurf_Single_Spec_Rim.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Presets/CelWithRim02__StylSurf_Single_ExCel_Spec_Rim.preset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/PresetsShared/Presets/CelWithRim02__StylSurf_Single_ExCel_Spec_Rim.preset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlatKit/[Render Pipeline] URP/ExampleSettings/[FlatKit] Example Forward Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlatKit/[Render Pipeline] URP/ExampleSettings/[FlatKit] Example Forward Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/House2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Houses/House2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Houses/House3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Houses/House3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Item/Chest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/ItemCollector/ItemCollector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/ItemCollector/ItemCollector.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlaybleCharacters/Capybara.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlaybleCharacters/Capybara.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlaybleCharacters/Sample.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlaybleCharacters/Sample.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Screens/LeaderboardScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Screens/LeaderboardScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Screens/SettingsScreen.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Screens/SettingsScreen.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Screens/SkinShop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Screens/SkinShop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SkinView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SkinView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ViewModel/CapybaraDefaultViewModel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ViewModel/CapybaraDefaultViewModel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Enemy/EnemyFabric.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Enemy/EnemyFabric.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Level.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Level.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Shop/Shop Content.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Shop/Shop Content.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault 4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Skins/CapybaraDefault.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/SkinsContainer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/SkinsContainer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_blue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_blue.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_green.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level_green.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Records/Screenshots.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Records/Screenshots.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneForItems.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneForItems.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ModelView Texture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ModelView Texture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,63 +356,65 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ToggleGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/PointToPointMovementConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ToggleGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/!Scripts/Test/CameraFollowTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/IState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/Transitions/Transition.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/Transitions/CatchTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CharacterCatcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/IStateSwitcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IPointToPointMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IRandomMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/EnemyConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Configs/PointToPointMovementConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/TriggerDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/BreakWatcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/ItemsAction/ItemHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CageSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/EnemyStateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/CatchState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/Cage.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/IMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/RandomMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Buttons/AddCharacterButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyParticleShower.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Catcher/CatcherTriggerObserver.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/BreakAfterCatchState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/StateMachine/States/MovementState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberColors.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Extension/EnumerableExtension.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/Numbers/NumberObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Counter/MoneyCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/LevelResources/AddressableLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/MainPrefabHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelInfoContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/AddressableLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/ProjectInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/Binders/NonLazyBinder.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/InitSceneStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/StartScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/CardFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/CharacterSkinItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/SkinView.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/ModelRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/SkinPlacement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/!Scripts/LevelAnimation/DoorOpen.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/LevelStates/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Skins/CharacterType.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Useful/SkinsScreenshotsMaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Test/GroupHolderTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/ForceMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/ObjectMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Test/CameraFollowTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Test/ObjectMoverTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Test/MovementHandlerTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/CharactersGroupHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/SaveSystem/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Player/Movement/MovementHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/InfoShower/ItemCollectedShower.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/VictoryScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/LevelStates/TimerScripts/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/LevelStates/TimerScripts/ICoroutineRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Collector/ItemCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/RewardArrowMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Useful/ItemShowerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Fabric/EnemyFabric.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyIndicatorManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/UI/EnemyIndicator.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Loading/LevelPrefabCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/LevelSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Installers/EnemyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Animation/EnemyAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Enemies/Movement/PointToPointMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Animations/RotateObjects/ModelRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardView.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardItemFabric.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/ShopSkins/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/Ranks.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/ScreensHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/Leaderboard/LeaderboardManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/!Scripts/UI/Screens/LeaderboardScreen.cs" />
       </list>
     </option>
   </component>
@@ -119,6 +431,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -171,7 +484,14 @@
       <workItem from="1726420796222" duration="3696000" />
       <workItem from="1726505853800" duration="1558000" />
       <workItem from="1726512735611" duration="1832000" />
-      <workItem from="1726908486015" duration="1651000" />
+      <workItem from="1726908486015" duration="2852000" />
+      <workItem from="1727110441287" duration="9830000" />
+      <workItem from="1727513488040" duration="4757000" />
+      <workItem from="1728977617472" duration="4140000" />
+      <workItem from="1729018328418" duration="3307000" />
+      <workItem from="1729420049985" duration="8445000" />
+      <workItem from="1730015022690" duration="13033000" />
+      <workItem from="1731837772351" duration="6353000" />
     </task>
     <servers />
   </component>
@@ -196,34 +516,39 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2872" y="146" key="RiderGenerateDialog" timestamp="1726421056149">
+    <state x="2872" y="146" key="RiderGenerateDialog" timestamp="1727120968972">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
-    <state x="571" y="86" key="RiderGenerateDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1720464853341" />
-    <state x="2872" y="146" key="RiderGenerateDialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1726421056149" />
+    <state x="2872" y="146" key="RiderGenerateDialog/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1727120968972" />
+    <state x="2701" y="345" key="SettingsEditor" timestamp="1731839722235">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2701" y="345" key="SettingsEditor/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1731839722235" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1726506826530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1720455747032" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2560.1400@0.0.1536.824" timestamp="1726506826530" />
-    <state x="2326" y="177" width="1032" height="811" key="dock-window-1" timestamp="1720192475526">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="0" y="0" width="1550" height="910" maximized="true" key="dock-window-1" timestamp="1730049220195">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2326" y="177" width="1032" height="811" key="dock-window-1/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1720192475526" />
-    <state x="2668" y="324" width="1066" height="752" key="find.popup" timestamp="1725715051175">
+    <state x="0" y="0" width="1550" height="910" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1730049220195" />
+    <state x="0" y="0" width="1550" height="910" maximized="true" key="dock-window-2" timestamp="1729442417947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" width="1550" height="910" maximized="true" key="dock-window-2/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1729442417947" />
+    <state x="2668" y="324" width="1066" height="752" key="find.popup" timestamp="1730016487490">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2481" y="241" width="799" height="558" key="find.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1724695466202" />
-    <state x="2668" y="324" width="1066" height="752" key="find.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1725715051175" />
+    <state x="2668" y="324" width="1066" height="752" key="find.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1730016487490" />
     <state x="2856" y="330" key="run.anything.popup" timestamp="1726328152078">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2856" y="330" key="run.anything.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1726328152078" />
-    <state x="2639" y="246" width="1120" height="1153" key="search.everywhere.popup" timestamp="1725714940018">
+    <state x="2639" y="246" width="1120" height="1153" key="search.everywhere.popup" timestamp="1730017479552">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1719327406131" />
     <state x="2459" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1724832408326" />
-    <state x="2639" y="246" width="1120" height="1153" key="search.everywhere.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1725714940018" />
+    <state x="2639" y="246" width="1120" height="1153" key="search.everywhere.popup/0.0.1536.824/1920.0.2560.1400@1920.0.2560.1400" timestamp="1730017479552" />
   </component>
 </project>

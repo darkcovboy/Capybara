@@ -19,6 +19,7 @@ namespace UI.Screens
         public void Init(int earnedMoney)
         {
             _moneyEarned.text = $"{earnedMoney}";
+            _rewardArrowMovement.SetFinalCoins(earnedMoney);
         }
 
         private void OnEnable()

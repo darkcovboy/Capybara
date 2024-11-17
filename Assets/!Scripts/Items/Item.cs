@@ -35,11 +35,9 @@ namespace Items
 
         private void Start()
         {
+            gameObject.layer = 8;
             _initialRotation = transform.rotation;
             ItemData = LoadData();
-            
-            if(ItemData == null)
-                throw new Exception($"Problem with item data in object {gameObject.name}");
         }
 
         public void ConnectTo(Transform at, bool isCollector = false)
@@ -84,7 +82,17 @@ namespace Items
         private void MoveToCollector(Transform target)
         {
             transform.SetParent(null);
-            transform.DOMove(target.position, _moveCollectorDuration).SetEase(Ease.InOutSine).OnComplete(DestroySelf);
+            Vector3 startPoint = transform.position;
+            Vector3 endPoint = target.position;
+            Vector3 midPoint = (startPoint + endPoint) / 2 + Vector3.up * 2f; // Поднимаем на 2 единицы вверх
+
+            // Создаем массив из трех точек для движения по параболе
+            Vector3[] path = new Vector3[] { startPoint, midPoint, endPoint };
+
+            // Настраиваем движение по пути
+            transform.DOPath(path, _moveCollectorDuration, PathType.CatmullRom)
+                .SetEase(Ease.InOutSine)
+                .OnComplete(DestroySelf);
         }
 
         private IEnumerator MoveToTarget(Transform target)

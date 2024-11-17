@@ -1,24 +1,38 @@
-﻿using Player.Skins;
+﻿using System;
+using Player.Skins;
 using UnityEngine;
 
 namespace UI.ShopSkins
 {
     public class SkinPlacement : MonoBehaviour
     {
-        private const string RenderLayer = "SkinRender";
+        public event Action<Transform> OnModelCreated;
+        public event Action OnModelDeleted;
 
-        private ViewModel _currentModel;
+        [SerializeField] private CardFactory _cardFactory;
 
-        public void InstantiateModel(ViewModel model)
+        private Card _currentModel;
+
+        
+        public void InstantiateModel(int stars, string modelName, ViewModel model)
+        {
+            DestroyModel();
+            
+            _currentModel = Instantiate(_cardFactory.Get(stars), transform);
+            _currentModel.UpdateText(modelName);
+            
+            Instantiate(model, _currentModel.SkinPlacement);
+            
+            OnModelCreated?.Invoke(_currentModel.transform);
+        }
+
+        public void DestroyModel()
         {
             if (_currentModel != null)
+            {
+                OnModelDeleted?.Invoke();
                 Destroy(_currentModel.gameObject);
-
-            _currentModel = Instantiate(model, transform);
-
-            Transform[] childrens = _currentModel.GetComponentsInChildren<Transform>();
-            foreach (Transform child in childrens)
-                child.gameObject.layer = LayerMask.NameToLayer(RenderLayer);
+            }
         }
     }
 }

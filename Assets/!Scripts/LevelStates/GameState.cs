@@ -83,6 +83,8 @@ namespace LevelStates
         private void NextLevel()
         {
             _saveManager.Save();
+            if(_saveManager.PlayerData.LastLevelId % 5 == 0 )
+                _saveManager.PlayerData.MoneyMultiplier++;
             _levelLoader.LoadScene(_saveManager.PlayerData.LastLevelId);
         }
 

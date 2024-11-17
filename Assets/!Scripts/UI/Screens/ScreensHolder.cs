@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UI.ShopSkins;
 using UnityEngine;
 
@@ -20,6 +21,8 @@ namespace UI.Screens
         public LoseScreen LoseScreen => _loseScreen;
 
         public VictoryScreen VictoryScreen => _victoryScreen;
+        public GameplayScreen GameplayScreen => _gameplayScreen;
+        public LeaderboardScreen LeaderboardScreen => _leaderboardScreen;
 
 
         private void Start()
@@ -42,6 +45,12 @@ namespace UI.Screens
                 { ScreenType.Lose, _loseScreen },
                 { ScreenType.Start, _startScreen}
             };
+        }
+
+        [Button]
+        public void SetNormal()
+        {
+            OpenScreen(ScreenType.Start);
         }
 
         public void OpenScreen(Screen currentScreen)

@@ -56,6 +56,10 @@
                 <e p="StateBase.cs" t="Include" />
               </e>
             </e>
+            <e p="UI" t="Include">
+              <e p="EnemyIndicator.cs" t="Include" />
+              <e p="EnemyPoint.cs" t="Include" />
+            </e>
           </e>
           <e p="Extension" t="Include">
             <e p="EnumerableExtension.cs" t="Include" />
@@ -83,6 +87,13 @@
             <e p="Item.cs" t="Include" />
             <e p="ItemData.cs" t="Include" />
           </e>
+          <e p="Leaderboard" t="Include">
+            <e p="LeaderboardItem.cs" t="Include" />
+            <e p="LeaderboardItemFabric.cs" t="Include" />
+            <e p="LeaderboardManager.cs" t="Include" />
+            <e p="Ranks.cs" t="Include" />
+          </e>
+          <e p="Level.cs" t="Include" />
           <e p="LevelAnimation" t="Include">
             <e p="DoorOpen.cs" t="Include" />
           </e>
@@ -128,6 +139,7 @@
             </e>
             <e p="Movement" t="Include">
               <e p="DesktopInput.cs" t="Include" />
+              <e p="ForceMover.cs" t="Include" />
               <e p="IInput.cs" t="Include" />
               <e p="MobileInput.cs" t="Include" />
               <e p="MovementHandler.cs" t="Include" />
@@ -153,10 +165,19 @@
           <e p="StaticData" t="Include">
             <e p="UpgradeCharacterPrices.cs" t="Include" />
           </e>
+          <e p="Test" t="Include">
+            <e p="CameraFollowTest.cs" t="Include" />
+            <e p="GroupHolderTest.cs" t="Include" />
+            <e p="MovementHandlerTest.cs" t="Include" />
+            <e p="ObjectMoverTest.cs" t="Include" />
+          </e>
           <e p="TestMovement.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AdPrice.cs" t="Include" />
             <e p="Animations" t="Include">
+              <e p="RotateObjects" t="Include">
+                <e p="ModelRotation.cs" t="Include" />
+              </e>
               <e p="ScaleDownAnimation.cs" t="Include" />
               <e p="ScaleLoopAnimation.cs" t="Include" />
               <e p="ScaleUpAnimation.cs" t="Include" />
@@ -187,6 +208,8 @@
               <e p="VictoryScreen.cs" t="Include" />
             </e>
             <e p="ShopSkins" t="Include">
+              <e p="Card.cs" t="Include" />
+              <e p="CardFactory.cs" t="Include" />
               <e p="CharacterSkinItem.cs" t="Include" />
               <e p="Shop.cs" t="Include" />
               <e p="ShopContent.cs" t="Include" />
@@ -195,6 +218,10 @@
               <e p="SkinPlacement.cs" t="Include" />
               <e p="SkinView.cs" t="Include" />
             </e>
+          </e>
+          <e p="Useful" t="Include">
+            <e p="ItemShowerEditor.cs" t="Include" />
+            <e p="SkinsScreenshotsMaker.cs" t="Include" />
           </e>
         </e>
         <e p="!SDK_Yandex" t="Include">
@@ -1600,6 +1627,18 @@
             <e p="BlurShader.shader" t="Include" />
             <e p="OutlineShader.shader" t="Include" />
             <e p="SimpleUnlitShader.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Sprites" t="Include">
+          <e p="Card" t="Include">
+            <e p="CardEffectVideo" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="NoBackUI.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Mask.shader" t="Include" />
           </e>
         </e>
         <e p="WebGLTemplates" t="Include">

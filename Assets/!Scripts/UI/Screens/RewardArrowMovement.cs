@@ -16,15 +16,13 @@ namespace UI.Screens
 
         private float _multiplyFactor = 1.5f;
 
-        [SerializeField] private TextMeshProUGUI _finalCoinsText;
         [SerializeField] private TextMeshProUGUI _advCoinsText;
         [SerializeField] private int _finalCoins;
 
         public float MultiplyFactor => _multiplyFactor;
-
-        private void Start()
+        public void SetFinalCoins(int final)
         {
-            _finalCoins = int.Parse(_finalCoinsText.text);
+            _finalCoins = final;
         }
 
         private void Update()

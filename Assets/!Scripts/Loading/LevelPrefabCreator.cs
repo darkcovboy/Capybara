@@ -1,5 +1,8 @@
-﻿using SaveSystem;
+﻿using System.Threading.Tasks;
+using SaveSystem;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using Zenject;
 
 namespace Loading
@@ -14,24 +17,23 @@ namespace Loading
             _saveManager = saveManager;
         }
 
-        public async void CreateLevelPrefab()
+        public async Task<GameObject> CreateLevelPrefab(Transform levelPrefabPosition)
         {
-            Transform position = GameObject.FindGameObjectWithTag("LevelPrefabTag").transform;
-            
-            var prefabLoadTask = AddressableLoader.LoadPrefabAsync(_saveManager.PlayerData.LastLevelPrefab);
+            // Загрузим префаб синхронно
+            //Debug.Log(_saveManager.PlayerData.LastLevelPrefab);
+            var handle = Addressables.LoadAssetAsync<GameObject>("Level2");
 
-            await prefabLoadTask;
-            
-            if (prefabLoadTask.IsFaulted || prefabLoadTask.Result == null)
+            await handle.Task;
+
+            if (handle.Status == AsyncOperationStatus.Failed || handle.Result == null)
             {
                 Debug.LogError("Ошибка загрузки префаба.");
+                return null;
             }
-            else
-            {
-                GameObject levelPrefab = prefabLoadTask.Result;
-                Instantiate(levelPrefab, position);
-                AddressableLoader.ReleasePrefab();
-            }
+
+            GameObject levelPrefab = handle.Result;
+            Addressables.Release(handle);
+            return Instantiate(levelPrefab, levelPrefabPosition);
         }
     }
 }

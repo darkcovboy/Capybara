@@ -20,6 +20,7 @@ namespace SaveSystem
         public Dictionary<CharacterType, int> AdViewsForSkins { get; set; }
         public int Capacity { get; set; }
         public bool IsAllLevelsCompleted { get; set; }
+        public int MoneyMultiplier { get; set; }
 
 
         public PlayerData()
@@ -28,6 +29,7 @@ namespace SaveSystem
             Level = 1;
             LastLevelId = 1;
             LastLevelPrefab = "Level1";
+            MoneyMultiplier = 1;
             IsInstructionsCompleted = false;
             SelectedSkin = CharacterType.CapybaraDefault;
             UnlockedSkins = new List<CharacterType> {SelectedSkin};

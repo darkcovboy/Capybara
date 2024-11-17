@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 4245598167465275007}
-  playerItem: {fileID: 8999595420253675347}
+  _playerItem: {fileID: 8999595420253675347}
   _itemPointHandler: {fileID: 1849850045838275057}
 --- !u!114 &7687095106620221510
 MonoBehaviour:

@@ -29,7 +29,14 @@ namespace UI.InfoShower
         private void UpdateText(int current, int max)
         {
             _text.text = $"{current}";
-            _image.fillAmount = current/max;
+            if (current == 0)
+            {
+                _image.fillAmount = 0;
+            }
+            else
+            {
+                _image.fillAmount = (float)current / max;
+            }
         }
     }
 }

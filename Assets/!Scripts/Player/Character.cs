@@ -19,12 +19,12 @@ namespace Player
         private CharacterData _characterData;
         private IInput _input;
 
-        public void Init(CharacterData characterData, IInput input)
+        public void Init(CharacterData characterData, IInput input, Transform initialPosition)
         {
             _characterData = characterData;
             _input = input;
 
-            Setup();
+            Setup(initialPosition);
         }
 
         public void UnblockMovement() => _movementHandler.OnMovement();
@@ -53,9 +53,9 @@ namespace Player
             OnDestroy?.Invoke(this);
         }
 
-        private void Setup()
+        private void Setup(Transform initialPosition)
         {
-            _movementHandler.Init(_characterData.Speed, _input);
+            _movementHandler.Init(_characterData.Speed, _input, initialPosition);
         }
     }
 }

@@ -6,9 +6,7 @@ namespace Player.Skins
     public enum CharacterType
     {
         CapybaraDefault = 0,
-        Capybara1 = 1,
-        Capybara2 = 2,
-        Capybara3 = 3,
-        Capybara4 = 4
+        RussianCapybara = 1,
+        AmericanCapybara = 2
     }
 }

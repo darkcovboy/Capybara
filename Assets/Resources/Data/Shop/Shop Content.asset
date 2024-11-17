@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterSkinsItems:
   - {fileID: 11400000, guid: 0a6592a7c2b05824eafbf39b54025ca1, type: 2}
-  - {fileID: 11400000, guid: 00274b312fc234747ae21784716075c4, type: 2}
   - {fileID: 11400000, guid: 36fbbf8be2ae5904ba947d70aec115cd, type: 2}
-  - {fileID: 11400000, guid: 9f161ca137a9b9c46aaff2f0cdecfda7, type: 2}
-  - {fileID: 11400000, guid: e6a44545afd803b4bad32eddcefad33d, type: 2}
+  - {fileID: 11400000, guid: 00274b312fc234747ae21784716075c4, type: 2}

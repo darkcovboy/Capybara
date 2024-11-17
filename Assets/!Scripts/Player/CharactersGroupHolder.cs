@@ -38,9 +38,10 @@ namespace Player
 
         private void Start()
         {
-            CreateCharacters();
+            //CreateCharacters();
         }
-
+        
+        
         public void UnblockMovement()
         {
             foreach (var character in _charactersList)
@@ -67,7 +68,7 @@ namespace Player
             Character prefab = GetCurrentSkinPrefab();
             CharacterPoint point = _positions.FirstOrDefault(x => !x.HaveCharacter);
             Character character = Instantiate(prefab, point.transform.position, Quaternion.identity, null);
-            character.Init(_characterData, _input);
+            character.Init(_characterData, _input, point.transform);
             point.SetCharacter(character);
             _charactersList.Add(character);
             character.OnDestroy += DeleteCharacter;
@@ -81,7 +82,7 @@ namespace Player
             return prefab;
         }
 
-        private void CreateCharacters()
+        public void CreateCharacters()
         {
             var prefab = GetCurrentSkinPrefab();
             _charactersList.Clear();
@@ -92,7 +93,7 @@ namespace Player
                 if (!_positions[i].HaveCharacter)
                 {
                     Character character = Instantiate(prefab, _positions[i].transform.position, Quaternion.identity);
-                    character.Init(_characterData, _input);
+                    character.Init(_characterData, _input,_positions[i].transform);
                     _positions[i].SetCharacter(character);
                     _charactersList.Add(character);
                     character.OnDestroy += DeleteCharacter;

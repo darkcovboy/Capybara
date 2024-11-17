@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using DefaultNamespace;
 using Items;
 using Items.Collector;
 using LevelStates;
@@ -28,8 +30,11 @@ namespace Installers
         [SerializeField] private ScreensHolder _screensHolder;
 
         [Header("Positions")] 
+        [SerializeField] private Transform _levelPrefabPosition;
         [SerializeField] private Transform _playerPosition;
         [SerializeField] private Transform _itemCollectorPosition;
+        private ItemCollector _itemCollector;
+        private CharactersGroupHolder _player;
 
 
         public override void InstallBindings()
@@ -44,9 +49,9 @@ namespace Installers
             SetupGame();
         }
 
-        private void Awake()
+        private async void Awake()
         {
-            SetupLevelPrefab();
+            await SetupLevelPrefab();
         }
 
         private void SetupUI()
@@ -59,19 +64,26 @@ namespace Installers
             Container.Bind<GameState>().AsSingle();
         }
 
-        private void SetupLevelPrefab()
+        private async Task SetupLevelPrefab()
         {
-            _levelPrefabCreator.CreateLevelPrefab();
+            GameObject levelPrefab = await  _levelPrefabCreator.CreateLevelPrefab(_levelPrefabPosition);
+            Level level = levelPrefab.GetComponent<Level>();
+            _player.transform.position = level.PlayerPosition.position;
+            _player.CreateCharacters();
+            _itemCollector.CalculateItems();
+            _itemCollector.transform.position = level.CollectorPosition.position;
+            Container.Inject(level.EnemyInstaller);
+
         }
 
         private void SetupPlayer()
         {
-            var player = Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_mainPrefabHolder.CharactersGroupHolder, _playerPosition.position,
+            _player = Container.InstantiatePrefabForComponent<CharactersGroupHolder>(_mainPrefabHolder.CharactersGroupHolder, _playerPosition.position,
                 Quaternion.identity, null);
 
-            Container.Bind<CharactersGroupHolder>().FromInstance(player).AsSingle();
+            Container.Bind<CharactersGroupHolder>().FromInstance(_player).AsSingle();
 
-            Container.Bind<IWatch>().To<PlayerBody>().FromInstance(player.gameObject.GetComponentInChildren<PlayerBody>())
+            Container.Bind<IWatch>().To<PlayerBody>().FromInstance(_player.gameObject.GetComponentInChildren<PlayerBody>())
                 .AsSingle();
         }
 
@@ -83,10 +95,10 @@ namespace Installers
 
         private void SetupCollector()
         {
-            var itemCollector = Container.InstantiatePrefabForComponent<ItemCollector>(_mainPrefabHolder.ItemCollector, _itemCollectorPosition.position,
+            _itemCollector = Container.InstantiatePrefabForComponent<ItemCollector>(_mainPrefabHolder.ItemCollector, _itemCollectorPosition.position,
                 Quaternion.identity, null);
             
-            Container.BindInterfacesAndSelfTo<ItemCollector>().FromInstance(itemCollector).AsSingle();
+            Container.BindInterfacesAndSelfTo<ItemCollector>().FromInstance(_itemCollector).AsSingle();
         }
 
         private void SetupMoneyCounter()

@@ -7,5 +7,6 @@ namespace LevelStates.TimerScripts
     {
         Coroutine StartCoroutine(IEnumerator coroutine);
         void StopCoroutine(IEnumerator coroutine);
+        void StopCoroutine(Coroutine coroutinec);
     }
 }

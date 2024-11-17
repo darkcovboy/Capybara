@@ -23,12 +23,12 @@ namespace Enemies.Animation
 
         public void PlayBreakAfterAttack()
         {
-            _animator.SetTrigger(Break);
+            _animator.SetTrigger(CatchBreak);
         }
 
         public void PlayBreaking()
         {
-            _animator.SetTrigger(CatchBreak);
+            _animator.SetTrigger(Break);
         }
     }
 }

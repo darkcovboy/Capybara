@@ -17,23 +17,34 @@ namespace Enemies.Movement
             _waypoints = points;
             _agent = agent;
             _agent.speed = config.Speed;
+            
         }
 
         public void Move()
         {
             if (_waypoints.Length == 0) return;
             
+            
             if(!_canMove) return;
+            
 
-            if (_agent.remainingDistance < _agent.stoppingDistance)
+            if (Vector3.Distance(_agent.transform.position,_waypoints[_currentWaypointIndex].position ) < 0.5f)
             {
                 _currentWaypointIndex = (_currentWaypointIndex + 1) % _waypoints.Length;
                 _agent.SetDestination(_waypoints[_currentWaypointIndex].position);
             }
         }
 
-        public void StopMovement() => _canMove = false;
+        public void StopMovement()
+        {
+            _agent.ResetPath();
+            _canMove = false;
+        }
 
-        public void StartMovement() => _canMove = true;
+        public void StartMovement()
+        {
+            _canMove = true;
+            _agent.SetDestination(_waypoints[_currentWaypointIndex].position);
+        }
     }
 }

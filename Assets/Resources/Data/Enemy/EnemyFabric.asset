@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 1632807046730947628, guid: 3bb8b81fdbfbf2c468b3d569ec616049, type: 3}
   _cagePrefab: {fileID: 5460172374347314252, guid: 2e359f593b79b8c40b472183ec5e8274, type: 3}
+  _enemyPoint: {fileID: 1231442172999535513, guid: d72104464fc750f4a907be784b3dcd87, type: 3}

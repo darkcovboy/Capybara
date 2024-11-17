@@ -11,6 +11,8 @@ namespace LevelStates.TimerScripts
         
         private readonly ICoroutineRunner _coroutineRunner;
         private int _time;
+        private Coroutine _currentCoroutine;
+
 
 
         public Timer(ICoroutineRunner coroutineRunner, int time)
@@ -21,12 +23,20 @@ namespace LevelStates.TimerScripts
 
         public void Start()
         {
-            _coroutineRunner.StartCoroutine(TimerCoroutine());
+            if (_currentCoroutine != null)
+                _coroutineRunner.StopCoroutine(_currentCoroutine);
+
+            _currentCoroutine = _coroutineRunner.StartCoroutine(TimerCoroutine());
+
         }
 
         public void Stop()
         {
-            _coroutineRunner.StopCoroutine(TimerCoroutine());
+            if (_currentCoroutine != null)
+            {
+                _coroutineRunner.StopCoroutine(_currentCoroutine);
+                _currentCoroutine = null;
+            }
         }
 
         public void AddTime(int seconds)

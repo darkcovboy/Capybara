@@ -17,8 +17,23 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2180489434ec6d3468c98c1137c18e15
   m_SerializeEntries:
-  - m_GUID: dcf5ed908f4397d489641091bc6c2a96
+  - m_GUID: 08b6204f30bb8e940859129fc87dce86
+    m_Address: Level2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 067332f61189e52449da329bed58affe
     m_Address: Level1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1b131d0affe7fb4994722b74974f36c
+    m_Address: Level3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4113a506886b6944e91a8ea10a151c86
+    m_Address: Assets/Prefabs/Levels/Level4.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

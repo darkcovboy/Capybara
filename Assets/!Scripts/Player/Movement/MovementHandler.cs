@@ -18,16 +18,21 @@ namespace Player.Movement
         [SerializeField] private float _rotationSpeed = 400f;
  
         private IInput _movementInput;
+        private float _defaultMovementSpeed;
         private float _speed;
         private Vector3 _movementDirection;
         private float _currentSpeed;
         private float _velocity;
         private bool _canMove;
+        private Transform _initialPosition;
 
-        public void Init(float speed, IInput input)
+        public void Init(float speed, IInput input, Transform initialPosition)
         {
             _speed = speed;
             _movementInput = input;
+            _initialPosition = initialPosition;
+            _defaultMovementSpeed = _movementSpeed;
+            GetComponent<ForceMover>().Init(initialPosition);
         }
 
         private void OnValidate()
@@ -46,13 +51,31 @@ namespace Player.Movement
 
         private void Update()
         {
-            _movementDirection = _movementInput.GetInputDirection();
+            if (_movementInput.GetInputDirection().magnitude > 0)
+            {
+                float distanceToInitialPosition = Vector3.Distance(transform.position, _initialPosition.position);
+
+                if (distanceToInitialPosition > 0.5f)
+                {
+                    _movementDirection = (_initialPosition.position - transform.position).normalized;
+                }
+                else
+                {
+                    _movementDirection = Vector3.zero;
+                }
+            }
+            else
+            {
+                _movementDirection = Vector3.zero;
+            }
+
             UpdateAnimator();
         }
 
         private void UpdateAnimator()
         {
-            _playerAnimator.SetSpeed(_currentSpeed);
+            float speed = new Vector3(_rigidbody.velocity.x, 0f, _rigidbody.velocity.z).magnitude;
+            _playerAnimator.SetSpeed(speed);
         }
 
         private void FixedUpdate()
@@ -81,7 +104,7 @@ namespace Player.Movement
             if(!_canMove)
                 return;
             
-            if (_movementDirection.magnitude > 0f)
+            if ((_movementDirection.x > 0.1f || _movementDirection.x < -0.1f) || (_movementDirection.z > 0.1f || _movementDirection.z < -0.1f))
             {
                 HandleRotation(_movementDirection);
                 HandleHorizontalMovement(_movementDirection);
@@ -108,6 +131,7 @@ namespace Player.Movement
         private void HandleRotation(Vector3 value)
         {
             var targetRotation = Quaternion.LookRotation(value);
+            targetRotation = Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed *Time.deltaTime);
         }
     }

@@ -15,3 +15,7 @@ MonoBehaviour:
   _charactersContainer:
   - CharacterType: 0
     Prefab: {fileID: 3078000908670150128, guid: 3ed9d48fc728714489a36df6f17d6d9c, type: 3}
+  - CharacterType: 1
+    Prefab: {fileID: 7601951559013914196, guid: e8cab9c044fbc5145bed80d8f71c3b11, type: 3}
+  - CharacterType: 2
+    Prefab: {fileID: 5485047861960879315, guid: 073e4e928e6ae4e4f85c50ecc600e706, type: 3}

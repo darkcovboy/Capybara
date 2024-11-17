@@ -15,6 +15,8 @@ MonoBehaviour:
   _characterType: 0
   _isBuingForAds: 0
   _price: 500
+  _stars: 1
+  _modelName: Capybara
   _amountOfAds: 1
-  _image: {fileID: 21300000, guid: bcd1263b1aac84923b93f43bb9afea4d, type: 3}
+  _image: {fileID: 21300000, guid: f5c7d05e2b701a94fa9d7473fced7030, type: 3}
   _viewModel: {fileID: 5786489523397055748, guid: 1d7094bcf6bf80248a2bce391700e566, type: 3}
